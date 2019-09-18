@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Lobster', cursive;
+	background: url(../img/bg_image.jpg) fixed no-repeat;
+	font-size: 1.5rem;
+	color: black;
+	padding: 40px;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	font-size: 2rem;
+	font-style: italic;
+	color: #800000;
+}
+a:hover {
+	color: white;
+	text-decoration: underline;
+}
