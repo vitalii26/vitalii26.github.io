@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	background-color: #990909;
+	color: #ffffff;
+}
+
+.main-header {
+	text-align: center;
+	padding: 15px 0 5px;
+}
+
+.main-header__link {
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+}
+
+.navigation {
+	background-color: #000000;
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+.navigation__list-item {
+	display: inline-block;
+}
+
+.navigation__list-item:not(:last-child) {
+	margin-right: 80px;
+}
+.navigation__list-link {
+	display: block;
+	font-size: 0;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navigation__list-figcaption {
+	font-size: 1.2rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.navigation__list-img {
+	max-width: 190px;
+}
+
+.main__article {
+	font-size: 0;
+	display: flex;
+}
+
+.main__article > * {
+	width: 100%;
+	font-size: 1rem;
+}
+
+.main__navigation{
+	max-width: 20%;
+	background-color: #7d0909;
+}
+.main__content {
+	max-width: 65%;
+	padding-top: 20px;
+}
+
+.main__aside {
+	max-width: 15%;
+}
+.main__navigation-link {
+	color: #e95b11;
+}
+.main__navigation-item,
+.main__content-text {
+	margin-bottom: 20px;
+}
+
+.main__navigation-item:last-child,
+.main__content-text:last-child {
+	margin: 0;
+}
+
+.main__aside {
+	background-color: #fff;
+}
+
+.main__aside-list {
+	list-style: none;
+}
+
+.main__aside-link {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 20px 0;
+
+}
+.main__aside-title {
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #e3dddd;
+	margin-bottom: 5px;
+}
+
+.main__aside-item {
+	position:  relative;
+}
+.main__aside-item::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 70px;
+	border-top: 5px solid #bdbdbd;
+	top: 0;
+	left: 50%;
+	transform:  translate(-50%);
+}
+
+/* 
+#990909 - page bgred
+#7d0909 - aside bgred
+#bdbdbd - dark grey
+#e3dddd - light grey
+#000000 - black
+#ffffff - white
+#e95b11 - orange
+ */
