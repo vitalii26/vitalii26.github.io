@@ -84,7 +84,7 @@ body {
 	transition: border .2s linear;
 }
 .social_menu-link:hover {
-	border: 1px solid #00c7fc;
+	border: 1px solid #00c7fd;
 }
 .copyright {
 	text-transform: capitalize;
