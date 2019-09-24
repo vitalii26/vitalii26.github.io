@@ -63,11 +63,14 @@ body {
 .social_menu {
 	display: inline-block;
 	list-style: none;
+	font-size: 0;
+	line-height: 0;
 }
 
 .social_menu-item {
 	display: inline-block;
 	margin-right: 25px;
+	font-size: 0.9rem;
 }
 
 .social_menu-item:last-child {
@@ -76,8 +79,13 @@ body {
 
 .social_menu-link {
 	display: inline-block;
+	border: 1px solid #121116;
+	border-radius: 50%;
+	transition: border .2s linear;
 }
-
+.social_menu-link:hover {
+	border: 1px solid #00c7fc;
+}
 .copyright {
 	text-transform: capitalize;
 	text-align: center;
