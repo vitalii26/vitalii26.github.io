@@ -66,28 +66,28 @@ body {
 	padding: 10px;
 }
 
-.shopping_form-item {
+.shopping_form-label {
 	transition: all .1s ease-in;
 }
 
-.shopping_form-item:nth-child(even) {
+.shopping_form-item:nth-child(even) .shopping_form-label {
 	background-color: #78778f;
 	border-bottom: 2px solid #78778f;
 	border-top: 2px solid #78778f;
 }
 
-.shopping_form-item:nth-child(odd) {
+.shopping_form-item:nth-child(odd) .shopping_form-label {
 	background-color: #85849a;
 	border-bottom:  2px solid #85849a;
 	border-top:  2px solid #85849a;
 }
 
-.shopping_form-item:hover {
+.shopping_form-item .shopping_form-label:hover {
 	border-color: #fff;
 	background-color: #5f6174;
 }
 
-.shopping_form-item:active {
+.shopping_form-item .shopping_form-label:active {
 	background-color: #ec8882;
 }
 
