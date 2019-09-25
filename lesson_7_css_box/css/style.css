@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+	background-color: #2793cb;
+}
+
+.footer {
+	padding: 120px 0 35px;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#2793cb;
+#24bdc8;
+#986f95;
+#c75442;
+#e77145;
+#ffc95d;
+#93c395;
+#5e9494;
+#cf7294;
+#288c62;
+#636996;
