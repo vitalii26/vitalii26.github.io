@@ -43,49 +43,60 @@ body {
 	padding: 20px 0;
 }
 
-.weather_list-item:first-child {
-	width: 50%;
+.dark_blue {
 	background-color: #2793cb;
 }
-.weather_list-item:nth-child(2) {
-	width: 25%;
+
+.blue {
 	background-color: #24bdc8;
 }
-.weather_list-item:nth-child(3) {
-	width: 25%;
+
+.light_violet {
 	background-color: #986f95;
 }
-.weather_list-item:nth-child(4) {
-	width: 25%;
+
+.dark_orange {
 	background-color: #c75442;
 }
-.weather_list-item:nth-child(5) {
-	width: 25%;
+
+.orange {
 	background-color: #e77145;
 }
-.weather_list-item:nth-child(6) {
-	width: 25%;
-	background-color: #ffc95d;
+
+.light_orange {
+	background-color: #ffc95d;	
 }
-.weather_list-item:nth-child(7) {
-	width: 25%;
+
+.light_green {
 	background-color: #93c395;
 }
-.weather_list-item:nth-child(8) {
-	width: 25%;
+
+.light_blue {
 	background-color: #5e9494;
 }
-.weather_list-item:nth-child(9) {
-	width: 50%;
+
+.rose {
 	background-color: #cf7294;
 }
-.weather_list-item:nth-child(10) {
-	width: 25%;
-	background-color: #288c62;
+
+.dark_green {
+	background-color: #288c62;	
 }
-.weather_list-item:last-child {
-	width: 100%;
+
+.dark_violet {
 	background-color: #636996;
+}
+
+.min_width {
+	width: 25%;
+}
+
+.mid_width {
+	width: 50%;
+}
+
+.max_width {
+	width:  100%;
 }
 .weather_list-header {
 	margin-bottom: 10px;
