@@ -54,7 +54,7 @@ body {
 	background-color: #fff;
 	position: relative;
 }
-.editor__text:before {
+.editor__window:before {
 	content: "";
 	display: block;
 	width: 2px;
@@ -77,7 +77,6 @@ body {
 	font-family: 'Futura-pt-heavy', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-/* 	line-height: 0.1; */
 }
 .editor__subtitle {
 	font-size: 1.9rem;
@@ -123,8 +122,6 @@ body {
 	position: absolute;
 	top: 90px;
 	right: 0px;
-	width: 100%;
-	max-width: 815px;
 	background-color: #f9be2d;
 }
 
