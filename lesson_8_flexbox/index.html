@@ -6,22 +6,22 @@
     <title>Blog</title>
     <link rel="icon" type="image/png" href="./fav/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libss/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<section class="blog">
 		<div class="container">
-			<div class="row">
+			<section class="blog">
 				<ul class="blog__list">
-					<li class="blog__item">
-						<a href="#" class="blog__link first">
-							<!-- <img src="./img/1.jpg" alt="car" class="blog__image"> -->
+					<li class="blog__item big">
+						<div class="blog__item-inner">
+						<a href="#" class="blog__link">
 							<footer class="blog__footer">
 							<p class="blog__date">November 28, 2015</p>
 							<h3 class="blog__title">Fantastic Designs Of 2015 Concept Cars</h3>
 							</footer>
 						</a>
+						</div>
 					</li>
 					<li class="blog__item">
 						<a href="#" class="blog__link">
@@ -32,8 +32,7 @@
 							<h3 class="blog__title">How To Find Design Inspiration In The Simple Things Around You
 							</h3>
 							</footer>
-							<img src="./img/author.png" alt="" class="author__img">
-							
+							<img src="./img/author.png" alt="author" class="author__img">
 						</a>
 					</li>
 					<li class="blog__item">
@@ -45,17 +44,17 @@
 							</h3>
 							</footer>
 
-							<img src="./img/author.png" alt="" class="author__img">
+							<img src="./img/author.png" alt="author" class="author__img">
 						</a>
 					</li>
 					<li class="blog__item">
 						<a href="#" class="blog__link">
 							<img src="./img/4.jpg" alt="boots" class="blog__image">
 							<footer class="blog__footer">
-							<p class="blog__date">November 08, 2015</p>
+							<!-- <p class="blog__date">November 08, 2015</p> -->
 							<h3 class="blog__title">Growth Hack Your Way to a Successful Freelance Career</h3>
 							</footer>
-							<img src="./img/author.png" alt=""  class="author__img">
+							<img src="./img/author.png" alt="author"  class="author__img">
 						</a>
 					</li>
 					<li class="blog__item">
@@ -66,12 +65,15 @@
 							<h3 class="blog__title">Get 80% Off DSLR Photography Course Bundle
 							</h3>
 							</footer>
-							<img src="./img/author.png" alt="" class="author__img">
+							<img src="./img/author.png" alt="author" class="author__img">
 						</a>
 					</li>
 				</ul>
-			</div>
+				<div class="blog__loading">
+					<img src="./img/loading.png" alt="loading" class="loading__image">
+					<p class="loading__text">loading new content</p>
+				</div>
+			</section>
 		</div>
-	</section>
 </body>
 </html>
