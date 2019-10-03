@@ -123,3 +123,6 @@ body {
 	text-transform: uppercase;
 	color: #99a5b0;
 }
+.author__img {
+	flex: 0 0 auto;
+}
