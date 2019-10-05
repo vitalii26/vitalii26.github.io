@@ -1,0 +1,28 @@
+@import 'vars';
+@import 'mixins';
+
+@import 'header';
+@import 'body';
+@import 'footer';
+
+$orange: orange;
+$red: red;
+$bg-color: $red;
+$main-font: sans-serif;
+$secondary-font: sans-serif;
+
+@mixin site-btn($bgc) {
+	width: 100px;
+	height: 50px;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid $bgc;
+	background-color: $bgc;
+	text-transform: uppercase;
+}
+
+.btn {
+
+	&.btn-1 {
+		@include site-btn(yellow);
+	}
