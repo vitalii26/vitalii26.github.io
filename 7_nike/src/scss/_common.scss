@@ -1,29 +1,24 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-	min-height: 100vh;
-	
+    min-height: 100vh;
 }
 
 body {
-	color: $dark;
-	background-color: $dark-blue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    color: $dark;
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-	width: 100%;
-	max-width: 680px;
-	margin: auto;
-	padding: 0 15px;
-}
-
-body {
-	
+    width: 100%;
+    max-width: 680px;
+    margin: auto;
+    padding: 0 15px;
 }
