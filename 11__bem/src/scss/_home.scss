@@ -1,11 +1,12 @@
 .home {
 	background: $light-grey url('../img/bg_home.jpg') center top no-repeat;
+	background-size:  cover;
+
 	&__inner {
-		min-height: 1000px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		// padding-bottom: 70px;
+		min-height: 100vh;
 	}
 	&__header {
 		padding: 40px 0px 40px;
@@ -13,6 +14,10 @@
 		justify-content: space-between;
 		align-items: center;
 
+	}
+
+	&__logo {
+		display: flex;
 	}
 
 	&__list {
@@ -24,6 +29,7 @@
 	}
 
 	&__link {
+		display: block;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -40,12 +46,12 @@
 		height: 3px;
 		background-color: $orange;
 		transform: translatex(-50%);
-		width: 0px;
+		width: 0;
 		transition: width 0.3s ease;
 	}
 
 	&__link:hover::before {
-		width: 50px;
+		width: 100%;
 	}
 
 	&__content {
