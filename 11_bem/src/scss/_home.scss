@@ -1,0 +1,94 @@
+.home {
+	background: $light-grey url('../img/bg_home.jpg') center top no-repeat;
+	&__inner {
+		min-height: 1000px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		// padding-bottom: 70px;
+	}
+	&__header {
+		padding: 40px 0px 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 560px;
+	}
+
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $black;
+		font-size: 1rem;
+		position: relative;
+	}
+
+	&__link::before {
+		@include pseudo;
+		top: -5px;
+		left: 50%;
+		width: 50px;
+		height: 3px;
+		background-color: $orange;
+		transform: translatex(-50%);
+		width: 0px;
+		transition: width 0.3s ease;
+	}
+
+	&__link:hover::before {
+		width: 50px;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 370px;
+	}
+
+	&__title {
+		font-size: 3.7rem;
+		font-weight: 900;
+		text-transform: capitalize;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 1rem;
+		font-weight: 300;
+		margin-bottom: 25px;
+		line-height: 1.7rem;
+	}
+
+	&__btn {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+		background-color: $orange;
+		display: inline-block;
+		padding: 20px;
+		font-size: 1.25rem;
+		font-weight: 300;
+		box-shadow: 0px 2px 5px $black;
+		transition: all .3s ease;
+	}
+
+	&__btn:hover {
+		color: $orange;
+		background-color: $white;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding: 70px 0;
+	}
+}
+
