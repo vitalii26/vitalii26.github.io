@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    color: $white;
+    font-family: $main-font;
+    font-size: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}

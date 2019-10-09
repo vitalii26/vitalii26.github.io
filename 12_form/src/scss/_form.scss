@@ -1,0 +1,36 @@
+.reg {
+	padding-top: 100px;
+	background-color: $light-grey;
+	min-height: 100vh;
+
+	.registration {
+		background-color: $blue;
+		padding: 45px 70px;
+
+		&__list {
+			display: flex;
+			list-style: none;
+		}
+
+		&__link {
+			display: block;
+			text-decoration: none;
+			color: $white-op;
+			font-weight: bold;
+			margin-right: 20px;
+			padding: 5px 0;
+			border-bottom: 2px solid transparent;
+			&:hover {
+				color: $white;
+				border-bottom: 2px solid $red;
+			}
+
+		}
+
+		&__item:last-child .registration__link{
+				margin-right: 0;
+		}
+
+	}
+
+}
