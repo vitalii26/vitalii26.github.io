@@ -4,12 +4,13 @@
 	min-height: 100vh;
 
 	.registration {
-		background-color: $blue;
+		background: $blue url('../img/bg_img.jpg') center top no-repeat;
 		padding: 45px 70px;
 
 		&__list {
 			display: flex;
 			list-style: none;
+			margin-bottom: 45px;
 		}
 
 		&__link {
@@ -19,6 +20,7 @@
 			font-weight: bold;
 			margin-right: 20px;
 			padding: 5px 0;
+			font-size: 1.1rem;
 			border-bottom: 2px solid transparent;
 			&:hover {
 				color: $white;
@@ -31,6 +33,115 @@
 				margin-right: 0;
 		}
 
+
+	}
+
+	.form {
+		min-height: 320px;
+		&__input {
+			display: block;
+			width: 100%;
+			background-color: transparent;
+			padding: 10px;
+			border: 2px solid $white-op;
+			color: $white;
+			&:focus {
+				border-color: $green;
+			}
+		}
+		&__label {
+			display: block;
+			width: 100%;
+			font-weight: bold;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+		&__label-checkbox {
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+
+		&__checkbox {
+			position: relative;
+			margin-bottom: 40px;
+		}
+
+		&__input-checkbox {
+			visibility: hidden;
+			margin-right: 10px;
+		}
+
+
+
+		&__label-checkbox::before {
+			@include pseudo;
+			top: 3px;
+			left: 0px;
+			width: 16px;
+			height: 16px;
+			background: $green;
+		}
+
+		&__input-checkbox:checked +
+		 .form__label-checkbox::before {
+		 	background: $green url('../img/check.png') center no-repeat;
+
+		}
+
+		&__button {
+			display: block;
+			width: 100%;
+			background-color: $green;
+			border: none;
+			color: $white;
+			font-size: 1.1rem;
+			padding: 10px 0;
+			margin-bottom: 30px;
+			transition: all 0.2s linear;
+
+			&:hover {
+				background-color: $white;
+				color: $green;
+			}
+		}
+
+		.error {
+			color: $red;
+			visibility: hidden;
+		}
+
+		&__input:invalid + .error {
+			visibility: visible;
+		}
+
+		&__options {
+			display: flex;
+			list-style: none;
+			justify-content: space-between;
+		}
+
+		&__link {
+			display: block;
+			font-size: 0.8rem;
+			color: $white-op;
+			text-decoration: none;
+			position: relative;
+
+			&:after {
+				@include pseudo;
+				height: 1px;
+				width: 100%;
+				top: 18px;
+				background-color: $white-op;
+			}
+		}
+
+		&__link:hover{
+			color: white;
+		}
+	}
+	.join .form__button {
+		margin-bottom: 0;
 	}
 
 }

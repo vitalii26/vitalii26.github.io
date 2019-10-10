@@ -4,27 +4,65 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>form</title>
+	<script> type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<section class="reg">
 		<div class="container">
-			<div class="registration">
-				<ul class="registration__list">
+			<div class="registration" id="tabs">
+				<ul class="registration__list tabs-nav">
 					<li class="registration__item">
-						<a href="#" class="registration__link"><span>Sign in</span></a>
+						<a href="#tab-1" class="registration__link"><span>Sign in</span></a>
 					</li>
 					<li class="registration__item">
-						<a href="#" class="registration__link"><span>Join us</span></a>
+						<a href="#tab-2" class="registration__link"><span>Join us</span></a>
 					</li>
 				</ul>
-				<form action="#" class="form">
-					<label for="username" class="form__label"></label>
-				</form>
+				<div class="tabs-items">
+					<div class="tabs-item" id="tab-1">
+						<form action="#" method="get" class="form">
+							<label for="username" class="form__label">username</label>
+							<input class="form__input" type="text" id="username" name="username" minlength="6" required>
+							<div class="error"><span>min 6 symbols</span></div>
+							<label for="password" class="form__label">password</label>
+							<input class="form__input" id="password" name="password" type="password"  minlength="8" required>
+							<div class="error"><span>min 8 symbols</span></div>
+							<div class="form__checkbox">
+								<input class="form__input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked>
+								<label class="form__label-checkbox" for="checkbox">Keep me signed in</label>
+							</div>
+							<input class="form__button" type="submit" value="Sign in">
+							<ul class="form__options">
+								<li class="form__item">
+									<a href="#" class="form__link">Forgot password</a>
+								</li>
+								<li class="form__item">
+									<a href="#tabs" class="form__link tabs-target" data-id="#tab-2">Create an account</a>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="tabs-item" id="tab-2">
+						<form action="#" method="get" class="form join">
+							<label for="usernamejoin" class="form__label">username</label>
+							<input class="form__input" type="text" id="usernamejoin" name="usernamejoin"  minlength="6" required>
+							<div class="error"><span>min 6 symbols</span></div>
+							<label for="passwordjoin" class="form__label">password</label>
+							<input class="form__input" id="passwordjoin" name="passwordjoin" type="password"  minlength="8" required>
+							<div class="error"><span>min 8 symbols</span></div>
+							<label for="passwordjoinadd" class="form__label">repeat password</label>
+							<input class="form__input" id="passwordjoinadd" name="passwordjoinadd" type="password"  minlength="8" required>
+							<div class="error"><span>min 8 symbols</span></div>
+							<input class="form__button" type="submit" value="Join in">
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/bundle.js"></script>
 </body>
 </html>
