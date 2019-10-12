@@ -9,20 +9,14 @@ html, body {
 }
 
 body {
-    color: $dark;
-    background-color: $dark-blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: $black;
     font-family: $main-font;
+    font-size: 100%;
 }
 
 .container {
     width: 100%;
-    max-width: 680px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 15px;
-}
-.t-upper {
-    text-transform: uppercase;
 }
