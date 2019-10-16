@@ -1,0 +1,44 @@
+.portfolio {
+	width: 100%;
+	max-width: 1920px;
+	margin: auto;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		list-style: none;
+		align-items: center;
+		min-height: 490px;
+		@media all and (max-width: 1919px) {
+			flex-direction: column;
+			min-height: 1500px;
+		}
+		@media all and (max-width: 575px) {
+			min-height: 1000px;
+		}
+	}
+	&__img {
+		@media all and (max-width: 767px) {
+			height: auto;
+			width: 100%;
+		}
+	}
+	&__link  {
+		width: 100%;
+		display: flex;
+		position: relative;
+		&:hover {
+			box-shadow: 0 0 5px 2px $black;
+		}
+	}
+	&__title {
+		content: "";
+		position: absolute;
+		left: 40px;
+		bottom: 40px;
+		color: $white;
+		text-transform: uppercase;
+		font-size: px_to_em(34px);
+		letter-spacing: px_to_em(2px);
+	}
+}

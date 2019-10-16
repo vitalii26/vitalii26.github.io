@@ -1,0 +1,97 @@
+.about {
+	padding: 160px 0;
+	@media all and (max-width: 767px) {
+		padding: 80px 0;
+	}
+	@media all and (max-width: 575px) {
+		padding: 40px 0;
+	}
+}
+.el__content {
+	display: block;
+	border-bottom: 2px solid $black;
+	border-left: 2px solid $black;
+	border-right: 2px solid $black;
+	padding: 60px 160px 40px;
+	text-align: center;
+	position: relative;
+	@media all and (max-width: 767px) {
+		padding: 40px 100px 30px;
+	}
+	@media all and (max-width: 575px) {
+		padding: 30px 20px 20px;
+	}
+	&::before{
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $black;
+		left: 0px;
+		top: 0;
+		position: absolute;
+		@media all and (max-width: 767px) {
+			width: 150px;
+		}
+		@media all and (max-width: 575px) {
+			width: 50px;
+		}
+	}
+	&::after{
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $black;
+		right: 0px;
+		top: 0;
+		position: absolute;
+		@media all and (max-width: 767px) {
+			width: 150px;
+		}
+		@media all and (max-width: 575px) {
+			width: 50px;
+		}
+
+	}
+
+}
+.work {
+	padding: 110px 160px 80px;
+	@media all and (max-width: 767px) {
+		padding: 40px 100px 30px;
+	}
+	@media all and (max-width: 575px) {
+		padding: 30px 20px 20px;
+	}
+}
+.white {
+	border-color: white;
+	&::before{
+		background-color: $white;
+	}
+	&::after{
+		background-color: $white;
+	}
+}
+.el__title {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	font-size: px_to_em(34px);
+	font-weight: 700;
+	@media all and (max-width: 767px) {
+		font-size: px_to_em(30px);
+	}
+}
+.el__text {
+	font-size: px_to_em(16px);
+	line-height: 1.5;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+}
