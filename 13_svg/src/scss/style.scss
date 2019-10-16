@@ -1,7 +1,10 @@
+@import "vars";
+@import "mixins";
 @import "sprite";
-.logo {
-	display: block;
-	width: 250px;
-	height: 250px;
-	fill: black;
-}
+
+@import "common";
+@import "first-screen";
+@import "about";
+@import "services";
+@import "works";
+@import "portfolio";
