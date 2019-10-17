@@ -6,28 +6,54 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		height: 490px;
 		list-style: none;
-		align-items: center;
-		min-height: 490px;
-
 	}
-	&__link  {
+	&__item {
 		width: 100%;
-		display: flex;
-		position: relative;
-		&:hover {
-			box-shadow: 0 0 5px 2px $black;
-		}
+		max-width: 25%;
+		height: 48%;
 	}
-	&__title {
-		content: "";
-		position: absolute;
-		left: 40px;
-		bottom: 40px;
+	&__item:nth-child(2), &__item:nth-child(5) {
+		max-width: 49%;
+	}
+	&__link {
+		background-image: url(../img/bg1.jpg);
+		background-size: cover;
+		display: flex;
+		align-items: flex-end;
+		height: 100%;
+		padding: 0px 0px 40px 40px;
 		color: $white;
+		text-decoration: none;
 		text-transform: uppercase;
 		font-size: px_to_em(34px);
 		letter-spacing: px_to_em(2px);
+		transition: all .3s ease;
+		&:hover {
+			box-shadow: 0 0 5px 2px $black;
+			color: red;
+		}
+		&.joint {
+			background-image: url(../img/bg2.jpg);
+			background-size: cover;
+		}
+		&.market {
+			background-image: url(../img/bg3.jpg);
+			background-size: cover;
+		}
+		&.worktop {
+			background-image: url(../img/bg4.jpg);
+			background-size: cover;
+		}
+		&.lable {
+			background-image: url(../img/bg5.jpg);
+			background-size: cover;
+		}
+		&.kyiv {
+			background-image: url(../img/bg6.jpg);
+			background-size: cover;
+		}
 	}
 }
 .contact {
