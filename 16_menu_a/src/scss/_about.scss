@@ -1,0 +1,45 @@
+.about {
+	background: $blue url('../img/bg_about.jpg') center top no-repeat;
+	&__inner {
+		min-height: 700px;
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__content {
+		max-width: 500px;
+		width: 100%;
+		@media all and (max-width: 991px) {
+			background-color: rgba($blue, 0.7);
+			padding: 20px;
+			border-radius: 15px;
+		}
+	}
+
+	&__title {
+		font-size: 5.6rem;
+		color: $white;
+		font-weight: bold;
+		text-transform: capitalize;
+		margin-bottom: 25px;
+		@media all and (max-width: 575px) {
+			font-size: 3.5rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.1rem;
+		font-weight: 300;
+		color: $white;
+		line-height: 1.7rem;
+		margin-bottom: 10px;
+	}
+
+	&__text:last-child {
+		margin-bottom: 0;
+	}
+
+
+}
