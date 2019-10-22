@@ -14,8 +14,11 @@
 	}
 	
 	&__header {
-		padding: 40px 0px 40px;
+		width: 100%;
+		max-width: 1200px;
+		padding: 40px 15px 40px;
 		display: flex;
+		margin: 0 auto;
 		justify-content: space-between;
 		@media all and (max-width: 767px) {
 			max-height: 15vh;
