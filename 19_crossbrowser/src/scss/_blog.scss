@@ -8,9 +8,7 @@
 		}
 
 }
-.cahee__subtitle {
-	font-size: 0.9rem;
-}
+
 
 .cahee__button {
 	background-color: #f72b3b;
@@ -29,6 +27,9 @@
 
 .blog {
 	background-color: $violet;
+	&.cahee__subtitle {
+	font-size: 0.9rem;
+}
 }
 
 .blog__list {
