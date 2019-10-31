@@ -119,6 +119,7 @@
 		list-style: none;
 		width: 100%;
 		max-width: 200px;
+		top: 60px;
 		display: block;
 		position: absolute;
 		border-top: 2px solid $orange;
@@ -168,7 +169,7 @@
 		left: 120%;
 	}
 	&__submenu li:hover > .home__submenu {
-		top: 0;
+		top: 60px;
 		left: 110%;
 	}
 
