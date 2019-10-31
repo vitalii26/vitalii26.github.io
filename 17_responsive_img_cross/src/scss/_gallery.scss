@@ -1,0 +1,85 @@
+.gallery {
+	background-color: $yellow;
+
+	&__inner {
+		text-align: center;
+		padding: 100px 0;
+		@media all and (max-width: 767px) {
+			padding: 50px 0;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: 1000px;
+		align-items: space-between;
+		margin-bottom: 50px;
+		@media all and (max-width: 575px) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			height: 2000px;
+		}
+	}
+	&__list-item {
+		height: fit-content;
+	}
+	&__link {
+		display: flex;
+		width: 100%;
+		transition: all .3s ease;
+		@include padding-hack(550px);
+		&.side__link{
+			@include padding-hack(260px);
+		}
+		&.bottom__link {
+			@include padding-hack(400px);
+		}
+		&:hover {
+			box-shadow: 0px 5px 10px $black;
+		}
+	}
+	.side {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 550px;
+		flex-basis: 32%;
+		@media all and (max-width: 575px) {
+			flex-basis: inherit;
+		}
+	}
+	.main {
+		flex-basis: 66%;
+		@media all and (max-width: 575px) {
+			flex-basis: inherit;
+		}
+	}
+	.bottom {
+		flex-basis: 49%;
+		@media all and (max-width: 575px) {
+			flex-basis: inherit;
+		}
+	}
+	&__button {
+		display: inline-flex;
+		width: 100%;
+		max-width: 200px;
+		padding: 20px 0px;
+		justify-content: center;
+		text-transform: uppercase;
+		background-color: $button-bg;
+		color: $white;
+		text-decoration: none;
+		font-size: 1.1 rem;
+		transition: all .3s ease;
+		&:hover {
+			color: $button-bg;
+			font-weight: 700;
+			background-color: $white;
+			box-shadow: 0px 5px 10px $black;
+		}
+	}
+}

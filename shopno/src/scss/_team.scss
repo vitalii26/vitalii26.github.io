@@ -1,0 +1,19 @@
+.sh-team {
+	.sh-works__link {
+		padding-top: 442px;
+		&::before {
+			content: none;
+		}
+	}
+	.sh-works__link:hover{
+			& sh-works__link {
+				transform: inintial;
+			}
+
+	}
+	&__mate {
+		position: absolute;
+		top: 0;
+		background-color: $cyan-light;
+	}
+}

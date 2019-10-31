@@ -1,0 +1,264 @@
+.home {
+	background: $light-grey url('../img/bg_home.jpg') center top no-repeat;
+	background-size:  cover;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 100vh;
+	}
+	&__header {
+		width: 100%;
+		max-width: 1200px;
+		padding: 0 15px;
+		margin:0 auto;
+		@media all and (max-width: 767px) {
+			padding: 0;
+			background-color: $grey;
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 15vh;
+		@media all and (max-width: 767px) {
+			position: fixed;
+			background-color: $grey;
+			border-bottom: 2px solid $orange;
+			padding: 0 10px;
+			z-index: 5;
+		}
+	}
+	&__logo {
+		display: flex;
+		@media all and (max-width: 767px) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 560px;
+		@media all and (max-width: 767px) {
+			justify-content: initial;
+			position: fixed;
+			top: 15vh;
+			left: 0px;
+			height: 85vh;
+			flex-direction: column;
+			align-items: initial;
+			background-color: $grey;
+			max-width: 100%;
+			z-index: 1000;
+			display: none;
+			overflow-y: auto;
+		}
+		&-item {
+			position: relative;
+			@media all and (max-width: 767px) {
+				line-height: 3rem;
+			}
+		}
+	}
+	&__list a {
+		text-decoration: none;
+		color: $black;
+		display: flex;
+		text-transform: uppercase;
+		font-weight: bold;
+		transition: color .3s ease;
+		padding: 5px 15px;
+		@media all and (max-width: 767px) {
+			padding: 10px 20px;
+		}
+		&:hover {
+			color: $orange;
+
+		}
+	}
+	&__list li:hover > .home__submenu {
+		@media all and (max-width: 767px) {
+			opacity: 1;
+			display: block;
+			max-height: initial;
+		}
+	}
+	&__list li:hover > .home__submenu {
+		top: 60px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__link::before {
+		@include pseudo;
+		top: -5px;
+		left: 50%;
+		width: 50px;
+		height: 3px;
+		background-color: $orange;
+		transform: translatex(-50%);
+		width: 0;
+		transition: width 0.3s ease;
+		@media all and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__link:hover::before {
+		width: 100%;
+	}
+	&__submenu {
+		list-style: none;
+		width: 100%;
+		max-width: 200px;
+		display: block;
+		position: absolute;
+		border-top: 2px solid $orange;
+		background-color: $light-grey;
+		box-shadow: 0 0 5px 2px $grey;
+		z-index: 100;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
+		@media all and (max-width: 767px) {
+			display: none;
+			background-color: $grey;
+			box-shadow: none;
+			position: static;
+			border: 2px solid transparent;
+			border-left-color: $orange;
+			margin-left: 15px;
+			max-height: auto;
+		}
+		&::before{
+			content: "";
+			position: absolute;
+			top: -20px;
+			left: 50px;
+			border: 10px solid transparent;
+			border-bottom-color: $orange;
+			@media all and (max-width: 767px) {
+				display: none;
+			}
+		}
+		& li {
+			line-height: 1.5rem;
+			position: relative;
+		}
+	}
+
+	&__submenu .home__submenu::before {
+		top: 10px;
+		left: -20px;
+		border: 10px solid transparent;
+		border-right-color: $orange;
+	}
+	&__submenu .home__submenu {
+		border-top: none;
+		border-left: 2px solid $orange;
+		top: 0;
+		left: 120%;
+	}
+	&__submenu li:hover > .home__submenu {
+		top: 0;
+		left: 110%;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 370px;
+		display: inline-block;
+		@media all and (max-width: 767px) {
+        padding-top: 15vh;
+    }
+	}
+
+	&__title {
+		font-size: 3.7rem;
+		font-weight: 900;
+		text-transform: capitalize;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 1rem;
+		font-weight: 300;
+		margin-bottom: 25px;
+		line-height: 1.7rem;
+	}
+
+	.cahee__button {
+		background-color: $orange;
+		box-shadow: 0px 2px 5px $black;
+	}
+
+	.cahee__button:hover {
+		color: $orange;
+		background-color: $white;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding: 70px 0;
+	}
+	&__scroll {
+		display: flex;
+	}
+	&__menu-icons {
+		color: $black;
+		font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		transform: translateY(-50%);
+		cursor: pointer;
+		z-index: 1500;
+		display: none;
+		@media all and (max-width: 767px) {
+			display: block;
+		}
+	}
+	.ion-md-close {
+		@media all and (max-width: 767px) {
+			display: none;
+			color: $orange;
+		}
+	}
+	&__menu.active .ion-md-close {
+		@media all and (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__menu.active .ion-md-menu {
+		@media all and (max-width: 767px) {
+			display: none;
+		}
+	}
+	&__menu.active .home__list {
+		@media all and (max-width: 767px) {
+			display: flex;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
