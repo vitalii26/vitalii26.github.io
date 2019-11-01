@@ -1,0 +1,26 @@
+.expert {
+	padding: 90px 0 110px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		text-decoration: none;
+		justify-content: space-between;
+		align-items: space-between;
+		height: 800px;
+		list-style: none;
+		&-item {
+			flex-basis: 30%;
+			height: fit-content;
+	
+		}
+	}
+	&__item {
+		text-align: center;
+		display: flex;
+		height: 370px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px;
+	}
+}

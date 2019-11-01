@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body {
+	min-height: 100vh;
+}
+body {
+	font-family: $main-font;
+	color: $text;
+	font-size: 100%;
+}
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.portfolio__button {
+	width: 100%;
+	max-width: 200px;
+	padding: 20px 0;
+	text-align: center;
+	color: $blue;
+	background-color: $white;
+	border-radius: 29px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all .3s ease;
+	&:hover {
+		color: $white;
+		background-color: $dark-blue;
+	}
+}
+.portfolio__title {
+	font-size: 3.1rem;
+	font-weight: 300;
+	color: $blue;
+	text-transform: capitalize;
+	margin-bottom: 70px;
+	text-align: center;
+	&:nth-child(even) {
+		margin-bottom: 100px;
+	}
+}
+.section {
+	&:nth-child(even) {
+		background-color: $white;
+	}
+	&:nth-child(odd) {
+		background-color: $light-blue;
+	}
+}

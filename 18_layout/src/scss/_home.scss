@@ -1,0 +1,77 @@
+.home {
+	&.section {
+		background-color: $blue;
+	}
+	.cookie {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		background-color: $dark-blue;
+		&__inner {
+			width: 100%;
+			max-width: 510px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 0;
+			align-items: center;
+			color: white;
+		}
+		&__text {
+			font-size: 0.8rem;
+		}
+		.portfolio__button  {
+			max-width: 115px;
+			padding: 10px 0;
+			border-radius: 15px;
+			font-size: 0.75rem;
+			color: $dark-blue;
+			text-transform: capitalize;
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+	&__inner {
+		min-height: 100vh;
+		padding: 100px 0 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__burger {
+		align-self: flex-end;
+	}
+	&__img {
+		border-radius: 50%;
+		border: 0;
+		box-shadow: 0px 0px 0px 9px rgba($white, 0.2),
+		0px 0px 0px 18px rgba($white, 0.1);
+	}
+	&__description {
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+	}
+	&__title {
+		font-weight: 900;
+		font-size: 3.1rem;
+		margin-bottom: 25px;
+	}
+	&__text {
+		font-weight: 300;
+		line-height: 2.2;
+	}
+	&__scroll {
+		display: flex;
+	}
+}
+.about {
+	padding: 90px 0 110px;
+	&__text {
+		text-align: center;
+		line-height: 2.2;
+	}
+}
