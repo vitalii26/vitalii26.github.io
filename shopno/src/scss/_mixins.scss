@@ -48,3 +48,69 @@
 		@content;
 	}
 }
+@mixin retina {
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-moz-min-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) { 
+		@content;
+	}
+}
+@mixin media-hidden {
+    @media only screen and (max-width: 319px) {
+        display: none;
+    }
+}
+
+@mixin xs-screen {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin sm-screen {
+    @media only screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+
+@mixin md-screen {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin md-screen-max {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin lg-screen {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl-screen {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// $map: (
+// '.first': #000;
+// '.second': #fff;
+// '.third': #0f0;
+// '.fourth': #f0f;
+// '.fifth': #00f;
+// );
+// @each $class, $color in $colors {
+// 	#{$class} {
+// 		background-color: $color;
+// 	}
+// }

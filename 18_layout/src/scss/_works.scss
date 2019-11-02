@@ -1,0 +1,65 @@
+.works {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		list-style: none;
+		@include sm-screen {
+			justify-content: space-between;
+			flex-direction: row;
+		}
+		@include md-screen {
+			height: 600px;
+		}
+	}
+	&__list-item {
+		height: fit-content;
+		flex-basis: 50%;
+		@include md-screen {
+			flex-basis: 32%;
+		}
+	}
+	&__link {
+		display: flex;
+		position: relative;
+		@include padding-hack(300px);
+		border-radius: 8px;
+		transition: all .3s ease;
+		border: 10px solid transparent;
+		@include md-screen {
+			@include padding-hack(271px);
+			border: none;
+		}
+		&:hover {
+			box-shadow: 0 0 10px $blue;
+		}
+	}
+	&__img {
+		border-radius: 8px;
+	}
+}
+.clients {
+	&__link {
+		display: flex;
+		border-radius: 8px;
+		transition: all .3s ease;
+		&:hover {
+			box-shadow: 0 0 10px $blue;
+		}
+	}
+	&__img {
+		display: inline-block;
+		padding: 10px;
+	}
+	&__logo {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		@include sm-screen {
+			flex-direction: row;
+		}
+	}
+}

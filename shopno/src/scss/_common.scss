@@ -35,16 +35,20 @@ body {
 	font-weight: 700;
 	font-family: $title-font;
 	text-align: center;
+	font-size: px_to_em(30px);
 	color: $text-dark;
-	font-size: px_to_em(20px);
-
-	@media all and (min-width: 1200px) {
+	@include md-screen {
 		font-size: px_to_em(45px);
 	}
+	
+
 }
 
 .sh-section {
-	padding: px_to_em(100px) 0;
+	padding: px_to_em(50px) 0;
+	@include lg-screen {
+		padding: px_to_em(100px) 0;
+	}
 
 	&:nth-child(odd) {
 		background-color: $light-grey-bg;
@@ -57,10 +61,13 @@ body {
 	&__title {
 		font-family: $title-font;
 		font-weight: 700;
-		font-size: px_to_em(38px);
+		font-size: px_to_em(30px);
 		text-align: center;
 		text-transform: uppercase;
 		color: $black;
+		@include md-screen {
+			font-size: px_to_em(38px);
+		}
 	}
 
 	&__subtitle {
@@ -68,7 +75,10 @@ body {
 		font-size: px_to_em(18px);
 		text-align: center;
 		text-transform: uppercase;
-		margin-bottom: px_to_em(100px);
+		margin-bottom: px_to_em(50px);
+		@include lg-screen {
+			margin-bottom: px_to_em(100px);
+		}
 	}
 
 	&__text-title {
@@ -77,6 +87,10 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-bottom: 15px;
+		text-align: center;
+		@include lg-screen {
+			text-align: left;
+		}
 	}
 
 	&__text-subtitle {
@@ -86,9 +100,14 @@ body {
 
 	&__text {
 		line-height: 1.8;
+		text-align: center;
+		@include lg-screen {
+			text-align: justify;
+		}
 	}
 
 	&__know-more {
+		display: inline-flex;
 		text-transform: uppercase;
 		color: $white;
 		font-size: 16px;
@@ -121,6 +140,99 @@ a:hover,
 a:active {
 	text-decoration: none;
 }
+
 .t-upper {
-	text-transform: uppercase;	
+	text-transform: uppercase;
+}
+
+.t-caps {
+	text-transform: capitalize;
+}
+
+ .f-normal {
+ 	font-style: normal;
+ }
+
+ .hidden {
+ 	position: absolute;
+ 	opacity: 0;
+ }
+
+.sh-rating {
+	color: $yellow;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 115px;
+}
+
+.sh-carousel {
+
+	&__slides {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+		@include lg-screen {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+		z-index: 1;
+		box-shadow: 10px -2px 16px rgba($light-grey, .9),
+		-10px -2px 16px rgba($light-grey, .9);
+	}
+
+	&__bullets {
+		display: flex;
+		list-style: none;
+		width: 52px;
+		justify-content: space-between;
+
+		&-link {
+			display: flex;
+			@include square(10px);
+			border-radius: 3px;
+			background-color: $grey-bullets;
+
+			&.active, &:hover, &:focus {
+				background-color: $corp-cyan;
+			}
+		}
+	}
+
+	&__caption {
+
+		.sh-section__text-title {
+			margin-bottom: 20px;
+		}
+
+		.sh-section__text {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	&__controls {
+		display: inline-flex;
+		justify-content: space-between;
+		width: 130px;
+	}
+
+	&__controls-link {
+		@include square(50px);
+		border-radius: 3px;
+		background-color: $white;
+		box-shadow: 2px 2px 2px rgba($black, .1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: $transition;
+
+		&:hover {
+			background-color: $cyan-light;
+		}
+	}
+
 }

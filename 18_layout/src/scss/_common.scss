@@ -35,17 +35,23 @@ body {
 	}
 }
 .portfolio__title {
-	font-size: 3.1rem;
+	font-size: 2.5rem;
 	font-weight: 300;
 	color: $blue;
 	text-transform: capitalize;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 	text-align: center;
-	&:nth-child(even) {
-		margin-bottom: 100px;
+	@include md-screen {
+		margin-bottom: 60px;
+		font-size: 3.1rem;
 	}
+
 }
 .section {
+	padding: 40px 0;
+	@include md-screen {
+		padding: 90px 0 100px;
+	}
 	&:nth-child(even) {
 		background-color: $white;
 	}

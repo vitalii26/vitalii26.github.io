@@ -9,3 +9,29 @@
 @import "works";
 @import "services";
 @import "team";
+@import "testimonials";
+@import "partners";
+
+@import "contacts";
+@import "footer";
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DELETE THIS
+html {
+	@media only screen and (max-width: 319px){
+		display: none;
+	}
+}
+.sh-first-screen,
+.sh-about,
+.sh-works,
+.sh-services,
+.sh-team,
+.sh-testimonials,
+.sh-partners,
+.sh-contacts,
+.sh-footer
+ {
+	// display: none;
+}
+.sh-testimonials {
+	// display: block;
+}

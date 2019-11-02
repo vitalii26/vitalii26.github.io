@@ -8,11 +8,56 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="home section">
+	<section class="home">
 		<div class="cookie">
 			<div class="cookie__inner">
-			<p class="cookie__text">This site uses cookies, so that my service can work better.</p>
-			<a href="#" class="portfolio__button">Accept</a>
+				<p class="cookie__text">This site uses cookies, so that my service can work better.</p>
+				<a href="#" class="portfolio__button cookie__button">Accept</a>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menu__container">
+				<div class="menu__inner">
+					<img src="img/close.png" alt="close" class="menu__close">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#about" class="menu__link">about me</a>
+						</li>
+						<li class="menu__item">
+							<a href="#services" class="menu__link">services</a>
+						</li>
+						<li class="menu__item">
+							<a href="#works" class="menu__link">my works</a>
+						</li>
+						<li class="menu__item">
+							<a href="#clients" class="menu__link">clients</a>
+						</li>
+					</ul>
+					<div class="menu__social">
+						<ul class="menu__social-list">
+							<li class="menu__social-item">
+								<a href="" target="_blank" class="menu__social-link">
+									<img class="menu__social-img" src="img/facebook.png" alt="facebook">
+								</a>
+							</li>
+							<li class="menu__social-item">
+								<a href="" target="_blank" class="menu__social-link">
+									<img class="menu__social-img" src="img/twitter.png" alt="twitter">
+								</a>
+							</li>
+							<li class="menu__social-item">
+								<a href="" target="_blank" class="menu__social-link">
+									<img class="menu__social-img" src="img/globe.png" alt="globe">
+								</a>
+							</li>
+							<li class="menu__social-item">
+								<a href="" target="_blank" class="menu__social-link">
+									<img class="menu__social-img" src="img/behance.png" alt="behance.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container">
@@ -20,71 +65,159 @@
 				<img class="home__burger" src="img/burger.png" alt="menu">
 				<img src="img/profile_img.png" alt="my photo" class="home__img">
 				<div class="home__description">
-				<h1 class="home__title">free portfolio psd template<br> for graphic designers</h1>
-				<p class="home__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+					<h1 class="home__title">free portfolio psd template<br> for graphic designers</h1>
+					<p class="home__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 				</div>
-				<a href="#" class="portfolio__button">hire me</a>
+				<a href="#" class="portfolio__button hire__button">hire me</a>
 				<a href="#about" class="home__scroll">
 					<img src="img/scroll.png" alt="scroll" class="home__scroll-img">
 				</a>
 			</div>
 		</div>
 	</section>
-	<section class="about section">
+	<section class="about section" id="about">
 		<div class="container">
 			<h2 class="portfolio__title">about me</h2>
 			<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit<br> esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
 		</div>
 	</section>
-	<section class="expert section">
+	<section class="expert section" id="expert">
 		<div class="container">
 			<h2 class="portfolio__title">expert in</h2>
 			<ul class="expert__list">
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
 						<img src="img/img1.png" alt="mobile">
-						<h4 class="expert__list-title">mobile app design</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">
+							<h4 class="expert__list-title">mobile app design</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+						</div>
+					</a>
 				</li>
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
 						<img src="img/img2.png" alt="web">
-						<h4 class="expert__list-title">web design</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">
+							<h4 class="expert__list-title">web design</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</a>
 				</li>
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
 						<img src="img/img3.png" alt="development">
-						<h4 class="expert__list-title">web dewelopment</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">
+							<h4 class="expert__list-title">web dewelopment</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</a>
 				</li>
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
 						<img src="img/img4.png" alt="design">
-						<h4 class="expert__list-title">product design</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">		<h4 class="expert__list-title">product design</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</a>
 				</li>
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
 						<img src="img/img5.png" alt="ux">
-						<h4 class="expert__list-title">ux & ui</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">
+							<h4 class="expert__list-title">ux & ui</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</a>
 				</li>
 				<li class="expert__list-item">
-					<div class="expert__item">
+					<a href="#" class="expert__item">
+						
 						<img src="img/img6.png" alt="animations">
-						<h4 class="expert__list-title">animations</h4>
-						<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim </p>
-					</div>
+						<div class="expert__list-description">
+							<h4 class="expert__list-title">animations</h4>
+							<p class="expert__list-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>
 	</section>
+	<section class="works section" id="works">
+		<div class="container">
+			<h2 class="portfolio__title">latest works</h2>
+			<ul class="works__list">
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_1.jpg" alt="work1" class="works__img">
+					</a>
+				</li>
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_2.jpg" alt="work2" class="works__img">
+					</a>
+				</li>
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_3.jpg" alt="work3" class="works__img">
+					</a>
+				</li>
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_4.jpg" alt="work4" class="works__img">
+					</a>
+				</li>
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_5.jpg" alt="work5" class="works__img">
+					</a>
+				</li>
+				<li class="works__list-item">
+					<a href="#" target="_blank" class="works__link">
+						<img src="img/work_6.jpg" alt="work6" class="works__img">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="clients section" id="clients">
+		<div class="container">
+			<h2 class="portfolio__title">clients</h2>
+			<div class="clients__logo">
+				<a href="https://www.microsoft.com/uk-ua" target="_blank" class="clients__link">
+					<img src="img/microsoft.png" alt="microsoft" class="clients__img">
+				</a>
+				<a href="https://www.samsung.com/ua/" target="_blank" class="clients__link">
+					<img src="img/samsung.png" alt="samsung.png" class="clients__img">
+				</a>
+				<a href="https://www.ibm.com/ua-en" target="_blank" class="clients__link">
+					<img src="img/ibm.png" alt="ibm" class="clients__img">
+				</a>
+				<a href="https://www.google.com.ua" target="_blank" class="clients__link">
+					<img src="img/google.png" alt="google" class="clients__img">
+				</a>
+			</div>
+		</div>
+	</section>
+	<div class="footer section">
+		<div class="container">
+			<div class="footer__inner">
+				<p class="footer__text">Need a graphic designer?<span class="bold"> Ready to work!</span></p>
+				<a href="#" class="portfolio__button hire__btn">hire me</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal">
+		<div class="modal__container">
+			<img src="img/close.png" alt="close" class="modal__close">
+			<h2 class="portfolio__title">hire me</h2>
+			<form action="get" class="modal__form">
+				<input class="modal__form-input" type="text" name="name" id="name" placeholder="Your Name">
+				<input class="modal__form-input" type="email" name="email" id="email" placeholder="Your E-Mail">
+				<textarea class="modal__form-input" name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message" ></textarea>
+				<input class="modal__form-button" type="submit" value="send message">
+			</form>
+		</div>
+	</div>
 	<script src="js/bundle.js"></script>
 </body>
 </html>

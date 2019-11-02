@@ -1,6 +1,23 @@
 @import "vars";
-
+@import "mixins";
 @import "common";
 @import "sprite";
 @import "home";
 @import "expert";
+@import "works";
+@import "footer";
+
+html {
+	@media only screen and (max-width: 319px){
+		display: none;
+	}
+}
+.home,
+.about,
+.expert,
+.works,
+.clients,
+.footer,
+ {
+	// display: none;
+}
