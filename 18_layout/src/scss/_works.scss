@@ -58,6 +58,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
+		list-style: none;
 		@include sm-screen {
 			flex-direction: row;
 		}

@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Portfolio</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon1.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="home">
+	<div class="home">
 		<div class="cookie">
 			<div class="cookie__inner">
 				<p class="cookie__text">This site uses cookies, so that my service can work better.</p>
@@ -17,8 +17,10 @@
 		</div>
 		<div class="menu">
 			<div class="menu__container">
-				<div class="menu__inner">
-					<img src="img/close.png" alt="close" class="menu__close">
+				<nav class="menu__inner">
+					<svg class="menu__close" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="assets/libs/sprite.svg#close"></use>
+					</svg>
 					<ul class="menu__list">
 						<li class="menu__item">
 							<a href="#about" class="menu__link">about me</a>
@@ -37,44 +39,54 @@
 						<ul class="menu__social-list">
 							<li class="menu__social-item">
 								<a href="" target="_blank" class="menu__social-link">
-									<img class="menu__social-img" src="img/facebook.png" alt="facebook">
+									<svg class="menu__social-img" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="assets/libs/sprite.svg#facebook"></use>
+									</svg>
 								</a>
 							</li>
 							<li class="menu__social-item">
 								<a href="" target="_blank" class="menu__social-link">
-									<img class="menu__social-img" src="img/twitter.png" alt="twitter">
+									<svg class="menu__social-img" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="assets/libs/sprite.svg#twitter"></use>
+									</svg>
 								</a>
 							</li>
 							<li class="menu__social-item">
 								<a href="" target="_blank" class="menu__social-link">
-									<img class="menu__social-img" src="img/globe.png" alt="globe">
+									<svg class="menu__social-img" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="assets/libs/sprite.svg#dribble"></use>
+									</svg>
 								</a>
 							</li>
 							<li class="menu__social-item">
 								<a href="" target="_blank" class="menu__social-link">
-									<img class="menu__social-img" src="img/behance.png" alt="behance.png">
+									<svg class="menu__social-img" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="assets/libs/sprite.svg#behance"></use>
+									</svg>
 								</a>
 							</li>
 						</ul>
 					</div>
-				</div>
+				</nav>
 			</div>
 		</div>
 		<div class="container">
 			<div class="home__inner">
-				<img class="home__burger" src="img/burger.png" alt="menu">
-				<img src="img/profile_img.png" alt="my photo" class="home__img">
+				<svg class="home__burger" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="assets/libs/sprite.svg#menu"></use>
+				</svg>
+				<div class="home__img"></div>
 				<div class="home__description">
 					<h1 class="home__title">free portfolio psd template<br> for graphic designers</h1>
 					<p class="home__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 				</div>
 				<a href="#" class="portfolio__button hire__button">hire me</a>
 				<a href="#about" class="home__scroll">
-					<img src="img/scroll.png" alt="scroll" class="home__scroll-img">
+					<svg class="home__scroll-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
 				</a>
 			</div>
 		</div>
-	</section>
+	</div>
 	<section class="about section" id="about">
 		<div class="container">
 			<h2 class="portfolio__title">about me</h2>
@@ -131,7 +143,6 @@
 				</li>
 				<li class="expert__list-item">
 					<a href="#" class="expert__item">
-						
 						<img src="img/img6.png" alt="animations">
 						<div class="expert__list-description">
 							<h4 class="expert__list-title">animations</h4>
@@ -182,20 +193,28 @@
 	<section class="clients section" id="clients">
 		<div class="container">
 			<h2 class="portfolio__title">clients</h2>
-			<div class="clients__logo">
-				<a href="https://www.microsoft.com/uk-ua" target="_blank" class="clients__link">
-					<img src="img/microsoft.png" alt="microsoft" class="clients__img">
-				</a>
-				<a href="https://www.samsung.com/ua/" target="_blank" class="clients__link">
-					<img src="img/samsung.png" alt="samsung.png" class="clients__img">
-				</a>
-				<a href="https://www.ibm.com/ua-en" target="_blank" class="clients__link">
-					<img src="img/ibm.png" alt="ibm" class="clients__img">
-				</a>
-				<a href="https://www.google.com.ua" target="_blank" class="clients__link">
-					<img src="img/google.png" alt="google" class="clients__img">
-				</a>
-			</div>
+			<ul class="clients__logo">
+				<li class="clients__logo-item">
+					<a href="https://www.microsoft.com/uk-ua" target="_blank" class="clients__link">
+						<img src="img/microsoft.png" alt="microsoft" class="clients__img">
+					</a>
+				</li>
+				<li class="clients__logo-item">
+					<a href="https://www.samsung.com/ua/" target="_blank" class="clients__link">
+						<img src="img/samsung.png" alt="samsung.png" class="clients__img">
+					</a>
+				</li>
+				<li class="clients__logo-item">
+					<a href="https://www.ibm.com/ua-en" target="_blank" class="clients__link">
+						<img src="img/ibm.png" alt="ibm" class="clients__img">
+					</a>
+				</li>
+				<li class="clients__logo-item">
+					<a href="https://www.google.com.ua" target="_blank" class="clients__link">
+						<img src="img/google.png" alt="google" class="clients__img">
+					</a>
+				</li>
+			</ul>
 		</div>
 	</section>
 	<div class="footer section">
@@ -208,7 +227,9 @@
 	</div>
 	<div class="modal">
 		<div class="modal__container">
-			<img src="img/close.png" alt="close" class="modal__close">
+			<svg class="modal__close" xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="assets/libs/sprite.svg#close"></use>
+			</svg>
 			<h2 class="portfolio__title">hire me</h2>
 			<form action="get" class="modal__form">
 				<input class="modal__form-input" type="text" name="name" id="name" placeholder="Your Name">

@@ -19,6 +19,13 @@
         display: none;
     }
 }
+@mixin xs-screen-land {
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+
 
 @mixin xs-screen {
     @media only screen and (max-width: 575px) {

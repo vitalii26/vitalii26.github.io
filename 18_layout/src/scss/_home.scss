@@ -47,32 +47,44 @@
 		padding: 50px 0 25px;
 		@include md-screen {
 			padding: 100px 0 25px;
-	}
+		}
 	}
 	&__burger {
 		align-self: flex-end;
 		cursor: pointer;
+		height: 25px;
+		width: 25px;
+		fill: white;
+		transition: all .3s ease;
+		&:hover {
+			fill: $dark-blue;
+		}
 		@include md-screen {
 			display: flex;
 		}
 	}
 	&__img {
+		width: 100px;
+		height: 100px;
+		background-color: $white;
 		border-radius: 50%;
 		border: 0;
 		box-shadow: 0px 0px 0px 9px rgba($white, 0.2),
 		0px 0px 0px 18px rgba($white, 0.1);
-		margin-bottom: 20px;
+		@include xs-screen-land {
+			margin-bottom: 20px;
+		}
 		@include md-screen {
-			margin-bottom: 0;
+			width: 150px;
+			height: 150px;
 		}
 	}
 	&__description {
 		text-align: center;
 		text-transform: uppercase;
 		color: $white;
-		margin-bottom: 20px;
-		@include md-screen {
-			margin-bottom: 0;
+		@include xs-screen-land {
+			margin-bottom: 20px;
 		}
 	}
 	&__title {
@@ -96,6 +108,13 @@
 	}
 	&__scroll {
 		display: flex;
+		&-img {
+			fill: 	rgba($white, 0.5);
+			transition: all .3s ease;
+		}
+		&:hover .home__scroll-img {
+			fill: $dark-blue;
+		}
 	}
 }
 .about {
@@ -132,6 +151,13 @@
 		top: 20px;
 		right: 20px;
 		cursor: pointer;
+		fill: $blue;
+		width: 24px;
+		height: 24px;
+		transition: all .3s ease;
+		&:hover {
+			fill: $dark-blue;
+		}
 	}
 	&__form {
 		display: flex;
@@ -173,9 +199,8 @@
 	}
 }
 .hire__button {
-	margin-bottom: 20px;
-	@include md-screen {
-		margin-bottom: 0;
+	@include xs-screen-land {
+		margin-bottom: 20px;
 	}
 }
 .menu {
@@ -193,6 +218,13 @@
 		top: 20px;
 		right: 20px;
 		cursor: pointer;
+		fill: $blue;
+		width: 24px;
+		height: 24px;
+		transition: all .3s ease;
+		&:hover {
+			fill: $dark-blue;
+		}
 	}
 	&__container {
 		max-width: 1170px;
@@ -271,15 +303,16 @@
 		&-link {
 			display: flex;
 			&:hover .menu__social-img {
-				background-color: $blue;
+				fill: $blue;
 			}
 		}
 		&-img {
-			background-color: $grey;
+			// background-color: $grey;
 			width: 50px;
 			height: 50px;
 			border-radius: 50%;
 			transition: all .3s ease;
+			fill: $grey;
 		}
 	}
 }
