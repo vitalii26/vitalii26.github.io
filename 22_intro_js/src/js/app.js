@@ -27,7 +27,7 @@ alert(`Площадь окружности: ${Math.round((Math.pow(circleRadius,
 let distance = prompt('Укажите расстояние в километрах между городами:', '');
 let time = prompt('Укажите количество часов на дорогу:', '');
 if (distance != null && time != null) {
-alert(`Необходимая скорость: ${distance / time} км/час`);
+alert(`Необходимая скорость: ${Math.round(distance / time)} км/час`);
 } else {
 	alert('Введите значение');
 }
