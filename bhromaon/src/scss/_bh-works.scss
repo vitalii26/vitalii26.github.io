@@ -1,0 +1,52 @@
+.bh-works {
+	background-color: $brown;
+	padding: 100px 0;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		position: relative;
+	}
+	&__list-item {
+		flex-basis: 30%;
+		@each $i, $color in $works-colors {
+			&:nth-child(#{$i}) {
+				.bh-works__icon {
+					fill: $color;
+				}
+			}
+		}
+	}
+	&__lines {
+		position: absolute;
+		left: 20px;
+		width: 30%;
+		height: auto;
+		left: 17%;
+		top: -50%;
+		&.right {
+			left: 53%;
+			top: -50%;
+		}
+	}
+	&__figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__icon {
+		width: 65px;
+		height: 65px;
+		margin-bottom: 25px;
+	}
+	&__caption {
+		font-size: $main-subtitle;
+		font-family: $secondary-font;
+		font-weight: 400;
+		text-transform: capitalize;
+		text-align: center;
+		@include sm-screen {
+			font-size: $section-title;
+		}
+	}
+}

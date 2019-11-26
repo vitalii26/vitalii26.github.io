@@ -1,0 +1,46 @@
+.bh-footer {
+	background-color: $grey-but-more-grey;
+	padding: 50px 0 50px;
+	@include md-screen {
+		padding: 115px 0 50px;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+	}
+	&__menu {
+		list-style: none;
+		display: flex;
+		width: 100%;
+		max-width: 170px;
+		justify-content: space-between;
+	}
+	&__logo {
+		text-decoration: none;
+		color: $white;
+		text-transform: uppercase;
+		font-size: $logo-size;
+	}
+	&__text {
+		font-size: $base-size;
+		text-transform: capitalize;
+		font-weight: 400;
+	}
+	&__menu-link {
+		display: flex;
+		text-decoration: none;
+		color: $white;
+		transition: all .3s ease;
+		&:hover {
+			color: $blue;
+		}
+	}
+	&__menu-logo {
+		width: 20px;
+		height: 20px;
+		fill: $white;
+	}
+}

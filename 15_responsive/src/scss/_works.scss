@@ -6,6 +6,15 @@
 	@media all and (max-width: 575px) {
 		padding: 40px 0;
 	}
+	&__list {
+		list-style: none;
+	}
+	&__list-item {
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	&__logo {
 		margin-bottom: 30px;
 		width: 80px;

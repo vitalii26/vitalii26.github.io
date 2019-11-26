@@ -1,2 +1,13 @@
+.one {
+	background-color: red;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6W119 */
+.two {
+	background-color: orange;
+}
+
+.three {
+	border: 2px solid black;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDQyxxQkFBcUIsRUFBQTs7QUFFdEI7RUFDQyx3QkFBd0IsRUFBQTs7QUFFekI7RUFDQyx1QkFBdUIsRUFBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IFwic3ByaXRlXCI7XHJcbi5vbmUge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxufVxyXG4udHdvIHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbn1cclxuLnRocmVlIHtcclxuXHRib3JkZXI6IDJweCBzb2xpZCBibGFjaztcclxufSJdfQ== */

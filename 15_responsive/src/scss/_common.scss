@@ -27,3 +27,51 @@ body {
 	padding: 0 15px;
 	margin: auto;
 }
+.wrapper {
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid $black;
+	border-left: 2px solid $black;
+	border-right: 2px solid $black;
+	padding: 60px 0 40px;
+	position: relative;
+	@media all and (max-width: 767px) {
+		padding: 40px 0 30px;
+	}
+	@media all and (max-width: 575px) {
+		padding: 30px 0 20px;
+	}
+	&::before{
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $black;
+		left: 0px;
+		top: 0;
+		position: absolute;
+		@media all and (max-width: 767px) {
+			width: 150px;
+		}
+		@media all and (max-width: 575px) {
+			width: 50px;
+		}
+	}
+	&::after{
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $black;
+		right: 0px;
+		top: 0;
+		position: absolute;
+		@media all and (max-width: 767px) {
+			width: 150px;
+		}
+		@media all and (max-width: 575px) {
+			width: 50px;
+		}
+
+	}
+}

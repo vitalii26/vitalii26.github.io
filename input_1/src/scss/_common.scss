@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: sans-serif;
+	color: black;
+	font-size: 100%;
+	background-color: white;
+}
+
+.container {
+	width: 100%;
+	max-width: 930px;
+	padding: 0 15px;
+	margin: auto;
+}
+.checkbox {
+	position: relative;
+}
+.checkbox__input {
+	visibility: hidden;
+	position: absolute;
+	&:checked + .checkbox__label {
+		color: #5a9aa6;
+	}
+	&:checked + .checkbox__label::after {
+		opacity: 1;
+	}
+	&:checked + .checkbox__label::before {
+		border-color: #5a9aa6;
+	}
+}
+.checkbox__label {
+	font-size: 20px;
+	padding-left: 25px;
+	cursor: pointer;
+	&::before {
+		content: '';
+		display: block;
+		width: 17px;
+		height: 17px;
+		border: 3px solid #ccc;
+		background-color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		transition: all .3s ease;
+
+	}
+	&::after {
+		opacity: 0;
+		content: '';
+		width: 17px;
+		height: 17px;
+		background-image: url("../img/check.png");
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		z-index: 2;
+		transition: all .3s ease;
+	}
+}
+// Radio
+.radio {
+	position: relative;
+}
+.radio__input {
+	visibility: hidden;
+	position: absolute;
+	&:checked + .radio__label::before {
+		border-color: #5a9aa6;
+	}
+	&:checked + .radio__label::after {
+		opacity: 1;
+	}
+}
+.radio__label {
+	font-size: 20px;
+	padding-left: 25px;
+	cursor: pointer;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 17px;
+		height: 17px;
+		top: 0;
+		left: 0;
+		background-color: white;
+		border-radius: 50%;
+		border: 3px solid #ccc;
+		z-index: 1;
+		transition: all .3s ease;
+	}
+	&::after {
+		content: '';
+		display: block;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: #5a9aa6;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		z-index: 2;
+		opacity: 0;
+		transition: all .6s ease;
+	}
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 10px solid #5a9aa6;
+		border-right: 10px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-left: 10px solid transparent;
+		z-index: 1;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+	}
+	select {
+	background: none;
+	border: 3px solid #ccc;
+	-webkit-appearance: none;
+	font-size: 20px;
+	padding: 10px 30px 10px 10px;
+	&:focus {
+		outline: none;
+		border-color: #5a9aa6;
+	}
+}
+}

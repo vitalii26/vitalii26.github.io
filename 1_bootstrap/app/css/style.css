@@ -1,2 +1,6 @@
+.col-12 > * {
+	background-color: yellow;
+	border: 1px solid orange;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6W119 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSUE7RUFDQyx3QkFBd0I7RUFDeEIsd0JBQXdCLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcInNwcml0ZVwiO1xyXG4ucm93IHtcclxufVxyXG5cclxuLmNvbC0xMiA+ICoge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHllbGxvdztcclxuXHRib3JkZXI6IDFweCBzb2xpZCBvcmFuZ2U7XHJcbn0iXX0= */

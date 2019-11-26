@@ -1,5 +1,8 @@
-// @import "sprite";
-// .row > * {
-// 	background-color: yellow;
-// 	border: 1px solid orange;
-// }
+@import "sprite";
+.row {
+}
+
+.col-12 > * {
+	background-color: yellow;
+	border: 1px solid orange;
+}

@@ -1,0 +1,44 @@
+.top-header {
+	padding: 50px 0;
+	&__logo {
+		display: inline-flex;
+	}
+	.contacts-nav {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		.contacts-nav__link {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: lighten($middle-grey, 20%);
+			font-size: 1.5rem;
+			@include square(42px);
+
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -50%;
+				height: 25px;
+				border: 1px solid $grey-border;
+				pointer-events: none;
+				cursor: auto;
+			}
+			&:hover {
+				color: $twitter-color;
+			}
+		}
+		&__item:last-child {
+		.contacts-nav__link {
+			&::after {
+				content: none;
+			}
+		}
+	}
+
+	}
+}
