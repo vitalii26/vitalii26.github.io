@@ -1,0 +1,93 @@
+<div class="first">
+	<div class="container">
+		<form action="" class="form">
+			<h2 class="title">Задача 1. Возраст пользователя</h2>
+			<label for="age" class="form__label">Введите свой возраст:</label>
+			<input type="number" id="age" class="form__input" required>
+			<input type="button" value="Определить" class="form__button" id="first__button">
+			<p class="form__out" id="first__out">Результат</p>
+			<!-- ====2===== -->
+			<h2 class="title">Задача 2. Спецсимвол</h2>
+			<label for="num1" class="form__label">Введите число от 0 до 9:</label>
+			<input type="number" id="num1" class="form__input" required>
+			<input type="button" value="Определить" class="form__button" id="second__button">
+			<p class="form__out" id="second__out">Результат</p>
+			<!-- ====3===== -->
+			<h2 class="title">Задача 3. Проверка числа на одинаковые символы</h2>
+			<label for="num2" class="form__label">Введите трехзначное число:</label>
+			<input type="number" id="num2" class="form__input" required>
+			<input type="button" value="Проверить" class="form__button" id="third__button">
+			<p class="form__out" id="third__out">Результат</p>
+			<!-- ====4===== -->
+			<h2 class="title">Задача 4. Высокосный год или нет</h2>
+			<label for="year" class="form__label">Введите год:</label>
+			<input type="number" id="year" class="form__input" required>
+			<input type="button" value="Проверить" class="form__button" id="year__button">
+			<p class="form__out" id="year__out">Результат</p>
+			<!-- ====5===== -->
+			<h2 class="title">Задача 5. Палиндром</h2>
+			<label for="palindrom" class="form__label">Введите число:</label>
+			<input type="number" id="palindrom" class="form__input" required>
+			<input type="button" value="Проверить" class="form__button" id="palindrom__button">
+			<p class="form__out" id="palindrom__out">Результат</p>
+			<!-- ====6===== -->
+			<h2 class="title">Задача 6. Конвертор валют</h2>
+			<label for="moneySum" class="form__label">Введите сумму в USD:</label>
+			<input type="number" id="moneySum" class="form__input" required>
+			<input type="button" value="Конвертировать" class="form__button" id="money__button">
+			<input class="form__radio" type="radio" name="money" value="0.91" id="EUR">
+			<label for="EUR" class="form__label">EUR</label>
+			<input class="form__radio" type="radio" name="money" value="24.02" id="UAH">
+			<label for="UAH" class="form__label">UAH</label>
+			<input class="form__radio" type="radio" name="money" value="1.7" id="AZN">
+			<label for="AZN" class="form__label">AZN</label>
+			<p class="form__out" id="money__out">Результат</p>
+			<!-- ====7===== -->
+			<h2 class="title">Задача 7. Сумма к оплате</h2>
+			<label for="sum" class="form__label">Введите сумму покупки:</label>
+			<input type="number" id="sum" class="form__input" required>
+			<input type="button" value="Вывести сумму" class="form__button" id="sum__button">
+			<p class="form__out" id="discount__out">Результат</p>
+			<p class="form__out" id="sum__out">Результат</p>
+			<!-- ====8===== -->
+			<h2 class="title">Задача 8. Окружность в квадрате</h2>
+			<label for="circleLength" class="form__label">Введите длинну окружности:</label>
+			<input type="number" id="circleLength" class="form__input" required>
+			<label for="squarePer" class="form__label">Введите периметр квадрата:</label>
+			<input type="number" id="squarePer" class="form__input" required>
+			<input type="button" value="Вывести сумму" class="form__button" id="figure__button">
+			<p class="form__out" id="figure__out">Результат</p>
+			<!-- ====9===== -->
+			<h2 class="title">Задача 9. Вопросы</h2>
+			<h3>Сколько будет 2 + 2?</h3>
+			<input class="form__radio" type="radio" name="question1" value="4" id="four">
+			<label for="four" class="form__label">4</label>
+			<input class="form__radio" type="radio" name="question1" value="3" id="three">
+			<label for="three" class="form__label">3</label>
+			<input class="form__radio" type="radio" name="question1" value="5" id="five">
+			<label for="five" class="form__label">5</label>
+			<h3>Столица США?</h3>
+			<input class="form__radio" type="radio" name="question2" value="Washington" id="WA">
+			<label for="WA" class="form__label">Washington</label>
+			<input class="form__radio" type="radio" name="question2" value="New York" id="NY">
+			<label for="NY" class="form__label">New York</label>
+			<input class="form__radio" type="radio" name="question2" value="Chicago" id="CH">
+			<label for="CH" class="form__label">Chicago</label>
+			<h3>Денежная единица Польши?</h3>
+			<input class="form__radio" type="radio" name="question3" value="dollar" id="dollar">
+			<label for="dollar" class="form__label">Доллар</label>
+			<input class="form__radio" type="radio" name="question3" value="euro" id="euro">
+			<label for="euro" class="form__label">Евро</label>
+			<input class="form__radio" type="radio" name="question3" value="zloty" id="zloty">
+			<label for="zloty" class="form__label">Злотый</label>
+			<input type="button" value="Узнать результат" class="form__button" id="question__button">
+			<p class="form__out" id="question__out">Результат</p>
+			<!-- ====10===== -->
+			<h2 class="title">Задача 10. Дата</h2>
+			<label for="date1" class="form__label">Введите дату:</label>
+			<input type="date" id="date1" class="form__input" required>
+			<input type="button" value="Вывести следующую дату" class="form__button" id="date__button">
+			<p class="form__out" id="date__out">Результат</p>
+		</form>
+	</div>
+</div>
