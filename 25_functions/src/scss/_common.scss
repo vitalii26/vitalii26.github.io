@@ -1,0 +1,26 @@
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.first {
+	padding: 20px 0 40px;
+	background-color: #eee;
+}
+.form__button {
+	border-radius: 5px;
+	color: white;
+	background-color: rgba(red, .4);
+}
+.title, .form__title {
+	color: blue;
+	text-align: center;
+}
+.form__input {
+	background-color: #eee;
+	border: 1px solid rgba(blue, .4);
+}
+.form__out {
+	color: red;
+}
