@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>26_objects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+
+<div class="first">
+	<div class="container">
+		<form action="" class="form">
+			<h2 class="first__title">Задача 1. Автомобиль</h2>
+			<div class="form__block">
+				<input type="button" value="Вывести инфо о авто" class="form__button" id="car-info__button">
+				<label for="distance" class="form__label">Задайте расстояние:</label>
+				<input type="text" id="distance" class="form__input" required>
+				<input type="button" value="Вычислить время" class="form__button" id="car__button">
+			</div>
+			<p class="form__out" id="car__out">Результат</p>
+			<!-- ====2===== -->
+			<h2 class="first__title">Задача 2. Работа с дробями</h2>
+			<div class="form__block">
+				<label for="numerator1" class="form__label">Задайте первое число:</label>
+				<input type="text" id="numerator1" class="form__input" placeholder="числитель" required>
+				<label for="denominator1" class="form__label">/</label>
+				<input type="text" id="denominator1" class="form__input" placeholder="числитель" required>
+				<select class="form__select" name="operator" id="operator">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+			</div>
+			<div class="form__block">
+				<label for="numerator2" class="form__label">Задайте второе число:</label>
+				<input type="text" id="numerator2" class="form__input" placeholder="числитель" required>
+				<label for="denominator2" class="form__label">/</label>
+				<input type="text" id="denominator2" class="form__input" placeholder="числитель" required>
+				<input type="button" value="Вычислить" class="form__button" id="fraction__button">
+				<input type="button" value="Сократить дроби" class="form__button" id="reduce__button">
+			</div>
+			<p class="form__out" id="fraction__out">Результат</p>
+			<!-- ====3===== -->
+			<h2 class="first__title">Задача 3. Работа с временем</h2>
+			<p class="form__out info" id="time__out">Результат</p>
+			<div class="form__block">
+				<label for="timeAdd" class="form__label">Введите сколько вы хотите добавить:</label>
+				<select class="form__select" name="timeOperation" id="timeOperation">
+					<option value="h">Часов</option>
+					<option value="m">Минут</option>
+					<option value="s">Секунд</option>
+				</select>
+				<input type="text" id="timeAdd"class="form__input" required>
+				<input type="button" value="Вывести" class="form__button" id="result__button">
+			</div>
+			<p class="form__out" id="result__out">Результат</p>
+		</form>
+	</div>
+</div>
+
+
+ <!-- index.ejs -->  <script src="js/bundle.js"></script>
+</body>
+</html>
