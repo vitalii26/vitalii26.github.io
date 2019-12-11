@@ -13,7 +13,6 @@ let car = {
 		if (isNaN(this.distance)) {
 			return 'введите число';
 		}
-			// let timeSeconds = (this.distance / this['average speed']) * 60;
 			let time = (this.distance / this['average speed']) + pause;
 			if (time > 4 && time % 4 !== 0) {
 				pause = Math.floor(time / 4);
@@ -21,8 +20,8 @@ let car = {
 				hours = Math.floor(time / 60);
 				minutes = Math.ceil(time % 60);
 				if (minutes == 60) {
-					minutes = 0;
 					hours++;
+					return `${hours} часов`;
 				}
 				if (time % 60 == 0) {
 					return `${hours} часов`;
@@ -40,6 +39,10 @@ let car = {
 				time = time * 60;
 				hours = Math.floor(time / 60);
 				minutes = Math.ceil(time % 60);
+				if (minutes == 60) {
+					hours++;
+					return `${hours} часов`;
+				}
 				if (time % 60 == 0) {
 					return `${hours} часов`;
 				}
