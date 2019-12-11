@@ -8,18 +8,42 @@ let car = {
 	},
 	time: function () {
 		let pause = 0;
+		let hours = 0;
+		let minutes = 0;
 		if (isNaN(this.distance)) {
-			return 'введите число'; 
+			return 'введите число';
 		}
+			// let timeSeconds = (this.distance / this['average speed']) * 60;
 			let time = (this.distance / this['average speed']) + pause;
 			if (time > 4 && time % 4 !== 0) {
 				pause = Math.floor(time / 4);
-				return time+=pause;
+				time = (time + pause) * 60;
+				hours = Math.floor(time / 60);
+				minutes = Math.ceil(time % 60);
+				if (minutes == 60) {
+					minutes = 0;
+					hours++;
+				}
+				if (time % 60 == 0) {
+					return `${hours} часов`;
+				}
+				return `${hours} часов ${minutes} минут`;
 			} else if (time > 4 && time % 4 == 0) {
 				pause = Math.floor(time / 4) - 1;
-				return time+=pause;
+				time = (time + pause) * 60;
+				hours = Math.floor(time / 60);
+				if (time % 60 == 0) {
+					return `${hours} часов`;
+				}
+				return `${hours} часов ${minutes} минут`;
 			} else {
-				return time;
+				time = time * 60;
+				hours = Math.floor(time / 60);
+				minutes = Math.ceil(time % 60);
+				if (time % 60 == 0) {
+					return `${hours} часов`;
+				}
+				return `${hours} часов ${minutes} минут`;
 			}
 		}
 	};
@@ -107,18 +131,24 @@ let time = {
 };
 function secondsAdd(sec) {
 	if (isNaN(sec)) {
-			return 'введите число'; 
-		}
+		return 'введите число';
+	}
 	let secSum = +time.seconds + +sec;
 	if (secSum < 10) {
 		time.seconds = '0' + secSum;
 	} else if (secSum == 60) {
 		time.seconds = '00';
 		let minSum = +time.minutes + Math.floor(secSum/60);
-		if (minSum < 10) {
-			time.minutes = '0' + minSum;
-		} else {
+		let hourSum = +time.hours + Math.floor(minSum/60);
+		time.hours = hourSum;
+		if (minSum % 60 < 10) {
+			time.minutes = '0' + (minSum % 60);
+		} else if (minSum < 60) {
 			time.minutes = minSum;
+		} else if (minSum == 60) {
+			time.minutes = '00';
+		} else {
+			time.minutes = minSum % 60;
 		}
 	} else if (secSum > 60) {
 		if (secSum % 60 < 10) {
@@ -127,10 +157,16 @@ function secondsAdd(sec) {
 			time.seconds = secSum % 60;
 		}
 		let minSum = +time.minutes + Math.floor(secSum/60);
-		if (minSum < 10) {
-			time.minutes = '0' + minSum;
-		} else {
+		let hourSum = +time.hours + Math.floor(minSum/60);
+		time.hours = hourSum;
+		if (minSum % 60 < 10) {
+			time.minutes = '0' + (minSum % 60);
+		} else if (minSum < 60) {
 			time.minutes = minSum;
+		} else if (minSum == 60) {
+			time.minutes = '00';
+		} else {
+			time.minutes = minSum % 60;
 		}
 
 	} else {
@@ -140,8 +176,8 @@ function secondsAdd(sec) {
 }
 function minutesAdd(min) {
 	if (isNaN(min)) {
-			return 'введите число'; 
-		}
+		return 'введите число'; 
+	}
 	let minSum = +time.minutes + +min;
 	if (minSum < 10) {
 		time.minutes = '0' + minSum;
@@ -173,17 +209,13 @@ function minutesAdd(min) {
 }
 function hoursAdd(hour) {
 	if (isNaN(hour)) {
-			return 'введите число'; 
-		}
+		return 'введите число'; 
+	}
 	let sum = +time.hours + +hour;
-	if (sum > 24 &&(sum % 24 < 10)) {
-		time.hours = '0' + sum % 24;
-	} else if (sum == 24) {
-		time.hours = '00';
-	} else if (sum < 10) {
+	if (sum < 10) {
 		time.hours = '0' + sum;
 	} else {
-		time.hours = sum % 24;
+		time.hours = sum;
 	}
 	return time.show();
 }
