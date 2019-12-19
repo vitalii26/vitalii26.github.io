@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>27 Arrays</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ar">
+		<div class="container">
+			<h2 class="ar__title">shopping list</h2>
+			<div class="row">
+				<div class="col-6">
+					<form class="ar__form">
+						<input class="ar__form-btn wide" id="slShowBtn" type="button" value="Вывести список">
+						<h3 class="ar__form-title">добавить элемент</h3>
+						<div class="ar__form__input-wrap">
+							<input type="text" id="addName" class="ar__form-input med" placeholder="Введите название">
+							<input type="text" id="addQty" class="ar__form-input med" placeholder="Введите количество">
+						</div>
+						<p class="ar__form-error" id="addError"></p>
+						<input class="ar__form-btn wide" id="addBtn" type="button" value="Добавить">
+						<h3 class="ar__form-title">купить элемент</h3>
+						<div class="ar__form__input-wrap">
+							<input type="text" id="buyName" class="ar__form-input med" placeholder="Введите название">
+							<input class="ar__form-btn med" id="buyBtn" type="button" value="Купить">
+						</div>
+						<input class="ar__form-btn wid" id="buyNoBtn" type="button" value="Убрать из купленных">
+					</form>
+				</div>
+				<div class="col-6">
+					<div class="ar__answer-wrap">
+						<h3 class="ar__answer-title">
+							ваши покупки:
+						</h3>
+						<p class="ar__answer-text" id="slAnswer">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="ar">
+		<div class="container">
+			<h2 class="ar__title">Чек</h2>
+			<div class="row">
+				<div class="col-6">
+					<form class="ar__form">
+						<input class="ar__form-btn wide" id="chShowBtn" type="button" value="Вывести чек на экран">
+						<input class="ar__form-btn wide" id="chSumBtn" type="button" value="Вывести общую сумму покупки">
+						<input class="ar__form-btn wide" id="chExpensiveBtn" type="button" value="Вывести самую дорогую покупку">
+						<input class="ar__form-btn wid" id="chAverageBtn" type="button" value="Показать среднюю стоимость товара">
+					</form>
+				</div>
+				<div class="col-6">
+					<div class="ar__answer-wrap">
+						<h3 class="ar__answer-title">
+							ваш чек:
+						</h2>
+						<p class="ar__answer-text" id="chAnswer">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ar">
+			<div class="container">
+				<h2 class="ar__title">Стилизация текста</h2>
+				<div class="row">
+					<div class="col-6">
+						<form class="ar__form">
+							<input type="text" id="textInput" class="ar__form-input wide" placeholder="Введите название">
+							<input class="ar__form-btn wid" id="addTextBtn" type="button" value="Вывести чек на экран">
+						</form>
+					</div>
+					<div class="col-6">
+						<div class="ar__answer-wrap">
+							<h3 class="ar__answer-title">
+								ваш текст:
+							</h2>
+							<p class="ar__answer-text" id="textAnswer">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="ar">
+			<div class="container">
+				<h2 class="ar__title">Аудитории</h2>
+				<div class="row">
+					<div class="col-6">
+						<form class="ar__form">
+							<input class="ar__form-btn wide" id="roomShowBtn" type="button" value="Вывести список аудиторий">
+							<h3 class="ar__form-title">выберите факультет</h3>
+							<div class="ar__form__input-wrap">
+								<select class="ar__form-select wid"  name="select"  id="facultyName">
+									<option value="Technological">Technological</option>
+									<option value="Constructional">Constructional</option>
+									<option value="Mechanical" selected>Mechanical</option>
+									<option value="Architectural">Architectural</option>
+								</select>
+								<input class="ar__form-btn mid" id="facultyBtn" type="button" value="Показать">
+							</div>
+							<h3 class="ar__form-title">Выберите группу</h3>
+							<div class="ar__form__input-wrap">
+								<input type="text" id="groupName" class="ar__form-input mid" placeholder="Введите название">
+								<input type="text" id="groupSeats" class="ar__form-input mid" placeholder="Введите кол-во студентов">
+							</div>
+							<div class="ar__form__input-wrap">
+								<select class="ar__form-select wid"  name="select"  id="groupFaculty">
+									<option value="Technological">Technological</option>
+									<option value="Constructional" id="facultyName">Constructional</option>
+									<option value="Mechanical" selected>Mechanical</option>
+									<option value="Architectural">Architectural</option>
+								</select>
+								<input class="ar__form-btn mid" id="groupBtn" type="button" value="Показать">
+							</div>
+							<input class="ar__form-btn wide" id="seatsSortBtn" type="button" value="Сортировать по количеству мест">
+							<input class="ar__form-btn wid" id="alphabetSortBtn" type="button" value="Сортировать по имени">
+						</form>
+					</div>
+					<div class="col-6">
+						<div class="ar__answer-wrap">
+							<h3 class="ar__answer-title">
+								ваши покупки:
+							</h3>
+							<p class="ar__answer-text" id="crAnswer">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="https://kit.fontawesome.com/35cf26bdc3.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="js/bundle.js"></script>
+	</body>
+	</html>
