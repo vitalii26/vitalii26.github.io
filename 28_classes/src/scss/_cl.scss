@@ -69,16 +69,30 @@
 		padding: none;
 		border-radius: 5px;
 	}
-	&__list-item {
-		margin-bottom: 10px;
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	&__list-text {
-		padding: 10px;
+	// &__list-item {
+	// 	margin-bottom: 10px;
+	// 	&:last-child {
+	// 		margin-bottom: 0;
+	// 	}
+	// }
+	// &__list-text {
+	// 	padding: 10px;
+	// 	border: 1px solid grey;
+	// 	border-radius: 5px;
+	// 	color: red;
+	// }
+	&__table {
+		width: 100%;
 		border: 1px solid grey;
-		border-radius: 5px;
-		color: red;
+	}
+	&__table-header {
+		border: 1px solid grey;
+		text-align: center;
+		padding: 10px;
+	}
+	&__table-cell {
+		border: 1px solid grey;
+		text-align: center;
+		padding: 10px;
 	}
 }

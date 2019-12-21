@@ -122,18 +122,53 @@ class EmpTable {
 		this.employees = employees;
 	}
 	getHTML () {
+		const table = document.createElement('table');
+		table.classList.add('ar__table');
+		document.querySelector(`#listAnswer`).appendChild(table);
+		const tr = document.createElement('tr');
+		tr.classList.add('ar__table-tr');
+		table.appendChild(tr);
+		const th1 = document.createElement('th');
+		th1.classList.add('ar__table-header');
+		th1.textContent = 'Имя';
+		tr.appendChild(th1);
+		const th2 = document.createElement('th');
+		th2.classList.add('ar__table-header');
+		th2.textContent = 'Возраст';
+		tr.appendChild(th2);
+		const th3 = document.createElement('th');
+		th3.classList.add('ar__table-header');
+		th3.textContent = 'Должность';
+		tr.appendChild(th3);
+		const th4 = document.createElement('th');
+		th4.classList.add('ar__table-header');
+		th4.textContent = 'Опыт';
+		tr.appendChild(th4);
+
 		this.employees.forEach(element => {
 			this.name = element.name;
 			this.age = element.age;
 			this.position = element.position;
 			this.experience = element.experience;
-			const li = document.createElement('li');
-			li.classList.add('ar__list-item');
-			const p = document.createElement('p');
-			p.classList.add('ar__list-text');
-			p.textContent = `Имя: ${this.name}, возраст: ${this.age}, должность: ${this.position}, стаж: ${this.experience} лет`;
-			document.querySelector(`#listAnswer`).appendChild(li);
-			li.appendChild(p);
+			const tr = document.createElement('tr');
+			tr.classList.add('ar__table-tr');
+			table.appendChild(tr);
+			const td1 = document.createElement('td');
+			td1.classList.add('ar__table-cell');
+			td1.textContent = `${this.name}`;
+			tr.appendChild(td1);
+			const td2 = document.createElement('td');
+			td2.classList.add('ar__table-cell');
+			td2.textContent = `${this.age}`;
+			tr.appendChild(td2);
+			const td3 = document.createElement('td');
+			td3.classList.add('ar__table-cell');
+			td3.textContent = `${this.position}`;
+			tr.appendChild(td3);
+			const td4 = document.createElement('td');
+			td4.classList.add('ar__table-cell');
+			td4.textContent = `${this.experience}`;
+			tr.appendChild(td4);
 		});
 	}
 }
