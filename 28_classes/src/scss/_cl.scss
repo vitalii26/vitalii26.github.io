@@ -1,0 +1,84 @@
+.ar {
+	padding: 50px 0 0;
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__form {
+		border: 1px solid grey;
+		border-radius: 10px;
+		padding: 30px;
+	}
+	&__form__input-wrap {
+		display: flex;
+		margin-bottom: 10px;
+	}
+	&__form-title {
+		text-transform: capitalize;
+	}
+	&__form-input {
+		border: 1px solid grey;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	&__form-btn {
+		border: 1px solid grey;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: rgba(grey, .1);
+		transition: all .2s ease;
+		&:hover {
+			background-color: grey;
+		}
+	}
+	.wide {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.wid {
+		width: 100%;
+	}
+	.med {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.mid {
+		width: 50%;
+	}
+	&__answer-wrap {
+		height: 100%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		padding: 30px;
+	}
+	&__answer-title {
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__form-error {
+		color: red;
+		position: absolute;
+		bottom: -5px;
+
+	}
+	&__answer-text {
+		text-align: justify;
+	}
+	&__form-select {
+		border: 1px solid grey;
+		padding: none;
+		border-radius: 5px;
+	}
+	&__list-item {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__list-text {
+		padding: 10px;
+		border: 1px solid grey;
+		border-radius: 5px;
+		color: red;
+	}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>28 Classes JS</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ar">
+		<div class="container">
+			<h2 class="ar__title">Окружность</h2>
+			<div class="row">
+				<div class="col-6">
+					<form class="ar__form">
+						<input class="ar__form-btn wide" id="getRadiusBtn" type="button" value="Вывести радиус">
+						<h3 class="ar__form-title">Изменить радиус</h3>
+						<div class="ar__form__input-wrap">
+							<input type="text" id="setRadius" class="ar__form-input med" placeholder="Введите радиус">
+							<input class="ar__form-btn med" id="setRadiusBtn" type="button" value="Изменить">
+						</div>
+						<input class="ar__form-btn wide" id="getDiameterBtn" type="button" value="Вывести диаметр">
+						<input class="ar__form-btn wide" id="circleAreaBtn" type="button" value="Вычислить площадь окружности">
+						<input class="ar__form-btn wide" id="circleLengthBtn" type="button" value="Вывести длинну окружности">
+					</form>
+				</div>
+				<div class="col-6">
+					<div class="ar__answer-wrap">
+						<h3 class="ar__answer-title">
+							результат:
+						</h3>
+						<p class="ar__answer-text" id="circleAnswer">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="ar">
+		<div class="container">
+			<h2 class="ar__title">Маркер</h2>
+			<div class="row">
+				<div class="col-6">
+					<form class="ar__form">
+						<input class="ar__form-btn wide" id="markerInfoBtn" type="button" value="Вывести информацию о маркере">
+						<h3 class="ar__form-title">Печать текста</h3>
+						<div class="ar__form__input-wrap">
+							<input type="text" id="setText" class="ar__form-input med" placeholder="Введите текст">
+							<input class="ar__form-btn med" id="getTextBtn" type="button" value="Показать">
+						</div>
+						<h3 class="ar__form-title">Заправить маркер</h3>
+						<div class="ar__form__input-wrap">
+							<input type="text" id="fuelValue" class="ar__form-input med" placeholder="Введите количество">
+							<input class="ar__form-btn med" id="addFuelBtn" type="button" value="Заправить">
+						</div>
+					</form>
+				</div>
+				<div class="col-6">
+					<div class="ar__answer-wrap">
+						<h3 class="ar__answer-title">
+							результат:
+						</h3>
+						<p class="ar__answer-text" id="markerAnswer">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="ar">
+		<div class="container">
+			<h2 class="ar__title">Список работников</h2>
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<div class="ar__answer-wrap">
+						<ul class="ar__list" id="listAnswer">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
