@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>30 events</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="event">
+		<div class="container">
+			<div class="event__inner">
+				<h2 class="event__title">Страница для отображения / редактирования текста</h2>
+				<p class="event__description">
+					Нажмите Ctrl + E, для редактирвания текста. При нажатии Ctrl + S, текст сохраняется.
+				</p>
+				<div class="event__view-window" id="view">Текст</div>
+			</div>
+		</div>
+	</div>
+	<div class="event">
+		<div class="container">
+			<div class="event__inner">
+				<h2 class="event__title">Сортировка данных по колонкам</h2>
+				<table class="event__table" id="table">
+					<thead>
+						<tr>
+							<th data-type="string">Фамилия</th>
+							<th data-type="string">Имя</th>
+							<th data-type="number">Возраст</th>
+							<th data-type="string">Должность</th>
+							<th data-type="number">Стаж</th>
+							<th data-type="number">Осталось работать</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Пупкин</td>
+							<td>Вася</td>
+							<td>45</td>
+							<td>Водитель</td>
+							<td>25</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td>Иванов</td>
+							<td>Петя</td>
+							<td>52</td>
+							<td>Охранник</td>
+							<td>35</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>Семёнов</td>
+							<td>Женя</td>
+							<td>32</td>
+							<td>Дворник</td>
+							<td>12</td>
+							<td>23</td>
+						</tr>
+						<tr>
+							<td>Картошкина</td>
+							<td>Маша</td>
+							<td>39</td>
+							<td>Кассир</td>
+							<td>20</td>
+							<td>21</td>
+						</tr>
+						<tr>
+							<td>Мудрый</td>
+							<td>Илья</td>
+							<td>21</td>
+							<td>Сантехник</td>
+							<td>1</td>
+							<td>44</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="event">
+		<div class="container">
+			<div class="event__inner left">
+				<h2 class="event__title">Изменение размера блока</h2>
+				<div class="event__element">Текст</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
