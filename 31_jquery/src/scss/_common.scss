@@ -1,0 +1,53 @@
+.progress-ring__circle-border {
+	transform-origin: center;
+	transform: rotate(-90deg);
+	transition: stroke-dashoffset .3s;
+}
+.progress-ring {
+	display: inline-flex;
+	position: relative;
+}
+.rating-value {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: #aaadbb;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: flex;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	color: $font-color;
+	font-size: 100%;
+	background-color: white;
+}
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: auto;
+}

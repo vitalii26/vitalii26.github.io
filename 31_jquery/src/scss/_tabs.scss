@@ -1,0 +1,252 @@
+.tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: {
+		image: url("../img/bg.jpg");
+		size: cover;
+		repeat: no-repeat;
+	}
+	min-height: 100vh;
+	&__inner {
+		display: flex;
+		justify-content: center;
+	}
+	&__buttons {
+		background-color: $bg-grey;
+		display: flex;
+		font-size: 16px;
+		justify-content: space-around;
+		text-transform: uppercase;
+	}
+	&__btn {
+		padding: 25px 15px;
+		border-bottom: 1px solid $bg-grey;
+		transition: all .3s ease;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&.active {
+			color: $white;
+			border-bottom: 1px solid $white;
+		}
+		&.active .tabs__icons {
+			fill: $white;
+		}
+		&:hover {
+			color: $white;
+			border-bottom: 1px solid $white;
+		}
+		&:hover .tabs__icons {
+			fill: $white;
+		}
+	}
+	&__icons {
+		fill: $font-color;
+		width: 25px;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+	&__text {
+		@media all and (max-width: 575px) {
+			text-align: center;
+		}
+	}
+	&__wrapper {
+		width: 100%;
+		max-width: 600px;
+	}
+	&__content {
+		background-color: $bg-blue;
+		padding: 60px 40px 55px 50px;
+		min-height: 425px;
+	}
+	&__content-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 40px;
+	}
+	&__content-left-img {
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	&__content-left__star {
+		display: flex;
+
+		width: 100%;
+		max-width: 130px;
+		justify-content: space-between;
+	}
+	&__icons-star {
+		fill: $font-color;
+		width: 20px;
+		height: 20px;
+		&.active {
+			fill: $star-yellow;
+		}
+	}
+	.info {
+		display: flex;
+		@media all and (max-width: 575px) {
+			flex-direction: column;
+		}
+	}
+	&__content-right {
+		position: relative;
+	}
+	&__content-right-title {
+		color: $white;
+		font-size: 32px;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	&__content-right-subtitle {
+		color: $subtitle-color;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+	}
+	&__content-right-text {
+		margin-bottom: 60px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.progress-ring {
+		position: absolute;
+		top: 0;
+		right: 0;
+		@media all and (max-width: 575px) {
+			display: none;	
+		}
+	}
+	&__content-right-bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content-discount {
+		color: $gold;
+		font-size: 12px;
+		line-height: 1.6;
+		font-weight: bold;
+	}
+	&__content-price {
+		font-size: 32px;
+		color: $white;
+	}
+	&__content-btn {
+		padding: 20px 35px;
+		color: $white;
+		text-transform: uppercase;
+		background-color: $btn-bg;
+		border-radius: 3px;
+		border: none;
+		transition: all .3s ease;
+		&:hover {
+			color: $btn-bg;
+			background-color: $white;
+		}
+		@media all and (max-width: 575px) {
+			padding: 10px;
+		}
+	}
+	&__rating-title {
+		font-size: 35px;
+		margin-bottom: 20px;
+		color: $white;
+	}
+	&__rating-score {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background-color: $btn-bg;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	&__rating-score-text {
+		color: $white;
+		font-size: 32px;
+	}
+	&__rating-text {
+		font-size: 20px;
+	}
+	&__rating-link {
+		color: $btn-bg;
+		transition: all .3s ease;
+		&:hover {
+			color: $gold;
+		}
+	}
+	&__buy-title {
+		color: $white;
+		font-size: 24px;
+		margin-bottom: 10px;
+		text-transform: capitalize;
+	}
+	&__buy-descr {
+		color: $font-color;
+		margin-bottom: 10px;
+	}
+	.rating {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.info1 {
+		position: relative;
+	}
+
+}
+.calculator {
+	padding: 100px;
+	&__container {
+		width: 100%;
+		max-width: 250px;
+		border: 2px solid $bg-blue;
+		margin: 0 auto;
+		text-align: center;
+		background-color: $bg-grey;
+		box-shadow: 0 0 30px $font-color;
+		border-radius: 5px;
+	}
+	&__form {
+		padding: 20px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	&__display {
+		border: 1px solid $subtitle-color;
+		padding: 5px;
+		font-weight: bold;
+		background-color: $white;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	&__key {
+		width: 41px;
+		height: 35px;
+		cursor: pointer;
+		border: none;
+		transition: all .3s ease;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $font-color;
+		&:hover {
+			color: $bg-blue;
+			background-color: $btn-bg;
+		}
+	}
+	&__backspace {
+		font-size: 10px;
+	}
+	&__key-equal {
+		width: 98px;
+	}
+}

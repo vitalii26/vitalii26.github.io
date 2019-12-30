@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>31 JQuery</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="tabs">
+		<div class="container">
+			<div class="tabs__inner">
+				<div class="tabs__wrapper">
+					<div class="tabs__buttons">
+						<div class="tabs__btn">
+							<svg class="tabs__icons" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="img/icons.svg#info"></use>
+							</svg>
+							<span class="tabs__text">information</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="tabs__icons" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="img/icons.svg#rating"></use>
+							</svg>
+							<span class="tabs__text">rating info</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="tabs__icons" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="img/icons.svg#cart"></use>
+							</svg>
+							<span class="tabs__text">where to buy</span>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__item info">
+							<div class="tabs__content-left">
+								<img class="tabs__content-left-img" src="img/game.jpg" alt="game">
+								<div class="tabs__content-left__stars">
+									<svg class="tabs__icons-star" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/icons.svg#star"></use>
+									</svg>
+									<svg class="tabs__icons-star" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/icons.svg#star"></use>
+									</svg>
+									<svg class="tabs__icons-star" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/icons.svg#star"></use>
+									</svg>
+									<svg class="tabs__icons-star" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/icons.svg#star"></use>
+									</svg>
+									<svg class="tabs__icons-star" xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/icons.svg#star"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="tabs__content-right">
+								<h4 class="tabs__content-right-title">FarCry 4</h4>
+								<p class="tabs__content-right-subtitle">first released nov 17, 2014</p>
+								<p class="tabs__content-right-text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+								layas struggling under the regime of a despotic self-appointed king.</p>
+								<div class="tabs__content-right-bottom">
+									<div class="tabs__content-right-wrap">
+										<span class="tabs__content-discount">20% OFF!</span>
+										<p class="tabs__content-price">$59.96</p>
+									</div>
+									<button class="tabs__content-btn">buy it now</button>
+								</div>
+								<div class="progress-ring">
+									<svg class="progress-ring__svg" width="74" height="74">
+										<defs>
+											<linearGradient id="RadialGradient1" x1="0" x2="0" y1="0" y2="1">
+												<stop offset="0%" stop-color="#00d4bc"/>
+												<stop offset="25%" stop-color="#00d4bc"/>
+												<stop offset="50%" stop-color="#0adba5"/>
+												<stop offset="75%" stop-color="#1ae780"/>
+												<stop offset="100%" stop-color="#1ae780"/>
+											</linearGradient>
+										</defs>
+										<circle class="progress-ring__circle-grey" stroke="#787c9b" stroke-width="2" cx="37" cy="37" r="33" fill="transparent"/>
+										<circle class="progress-ring__circle-border" stroke="url(#RadialGradient1)" stroke-width="4" cx="37" cy="37" r="34" fill="transparent"/>
+									</svg>
+									<span class="rating-value">7.8</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="tabs__item rating">
+							<h4 class="tabs__rating-title">User score</h4>
+							<div class="tabs__rating-score">
+								<span class="tabs__rating-score-text">7.8</span>
+							</div>
+							<p class="tabs__rating-text">Mixed or average reviews based on <a href="#" class="tabs__rating-link">1365 Ratings</a></p>
+						</div>
+						<div class="tabs__item buy">
+							<h4 class="tabs__buy-title">address</h4>
+							<address class="tabs__buy-descr">6198 Butler Pike, Suite 200
+							Blue Bell PA 19422</address>
+							<h4 class="tabs__buy-title">phone</h4>
+							<a href="tel:215-643-6385" class="tabs__buy-descr">215-643-6385</a>
+							<h4 class="tabs__buy-title">e-mail</h4>
+							<a href="mailto:games@kappapublishing.com" class="tabs__buy-descr">games@kappapublishing.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="calculator">
+		<div class="calculator__container">
+			<form class="calculator__form">
+				<input class="calculator__display" id="display" type="text" disabled />
+				<div class="calculator__row">
+					<button type="button" value="c" class="calculator__key calculator__clear"></button>
+					<button type="button" value="Back" class="calculator__key calculator__backspace"></button>
+					<button type="button" value="^3" class="calculator__key calculator__power"></button>
+					<button type="button" value="+" class="calculator__key calculator__button"></button>
+				</div>
+				<div class="calculator__row">
+					<button type="button" value="9" class="calculator__key calculator__button"></button>
+					<button type="button" value="8" class="calculator__key calculator__button"></button>
+					<button type="button" value="7" class="calculator__key calculator__button"></button>
+					<button type="button" value="-" class="calculator__key calculator__button"></button>
+				</div>
+				<div class="calculator__row">
+					<button type="button" value="6" class="calculator__key calculator__button"></button>
+					<button type="button" value="5" class="calculator__key calculator__button"></button>
+					<button type="button" value="4" class="calculator__key calculator__button"></button>
+					<button type="button" value="*" class="calculator__key calculator__button"></button>
+				</div>
+				<div class="calculator__row">
+					<button type="button" value="3" class="calculator__key calculator__button"></button>
+					<button type="button" value="2" class="calculator__key calculator__button"></button>
+					<button type="button" value="1" class="calculator__key calculator__button"></button>
+					<button type="button" value="/" class="calculator__key calculator__button"></button>
+				</div>
+				<div class="calculator__row">
+					<button type="button" value="0" class="calculator__key calculator__button"></button>
+					<button type="button" value="." class="calculator__key calculator__button"></button>
+					<button type="button" value="=" class="calculator__key calculator__key-equal"></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
