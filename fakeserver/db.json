@@ -1,0 +1,130 @@
+{
+	"pizza": [
+		{
+			"id": 1,
+			"title": "Капричоза",
+			"description": "соус томатный, сыр моцарелла, ветчина, свежие грибы.",
+			"price": 129.99,
+			"weight": 430,
+			"size": 30,
+			"img-url": "./img/pizza/capricciosa.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Цезарио",
+			"description": "соус сливочный, помидоры, хрустящий салат, пармезан, куриное мясо, сыр моцарелла, перепелиные яйца.",
+			"price": 167.99,
+			"weight": 580,
+			"size": 30,
+			"img-url": "./img/pizza/cezario.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Формаджи",
+			"description": "соус сливочный, пармезан, сыр моцарелла, сыр рикотта, сыр дор блю, грецкий орех, груша.",
+			"price": 157.99,
+			"weight": 390,
+			"size": 30,
+			"img-url": "./img/pizza/kvatro.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Салями",
+			"description": "соус томатный, сыр моцарелла, колбаса салями.",
+			"price": 117.99,
+			"weight": 390,
+			"size": 30,
+			"img-url": "./img/pizza/salame.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Маргарита",
+			"description": "соус томатный, сыр моцарелла, помидоры.",
+			"price": 99.99,
+			"weight": 400,
+			"size": 30,
+			"img-url": "./img/pizza/margaryta.jpg"
+		},
+		{
+			"id": 6,
+			"title": "Диабола",
+			"description": "соус томатный, сыр моцарелла, перец чили, колбаса пепперони.",
+			"price": 114.99,
+			"weight": 400,
+			"size": 30,
+			"img-url": "./img/pizza/dyavola.jpg"
+		},
+		{
+			"id": 7,
+			"title": "Карбонара",
+			"description": "соус томатный, ветчина, запеченное яйцо, сыр моцарелла, боварские колбаски.",
+			"price": 132.99,
+			"weight": 400,
+			"size": 30,
+			"img-url": "./img/pizza/carbonara.jpg"
+		},
+		{
+			"id": 8,
+			"title": "Прошуто",
+			"description": "соус томатный, сыр моцарелла, ветчина.",
+			"price": 127.99,
+			"weight": 390,
+			"size": 30,
+			"img-url": "./img/pizza/prosciutto.jpg"
+		},
+		{
+			"id": 9,
+			"title": "Парма",
+			"description": "соус сливочный, пармезан, сыр моцарелла, прошутто, руккола.",
+			"price": 154.99,
+			"weight": 380,
+			"size": 30,
+			"img-url": "./img/pizza/parma.jpg"
+		},
+		{
+			"id": 10,
+			"title": "Поло",
+			"description": "сыр моцарелла, лук, майонез, помидоры, куриное мясо.",
+			"price": 124.99,
+			"weight": 440,
+			"size": 30,
+			"img-url": "./img/pizza/polo.jpg"
+		},
+		{
+			"id": 11,
+			"title": "Тоно",
+			"description": "соус томатный, лук, тунец консервированный, сыр моцарелла.",
+			"price":  156.99,
+			"weight": 450,
+			"size": 30,
+			"img-url": "./img/pizza/tono.jpg"
+		},
+		{
+			"id": 12,
+			"title": "Меланзана",
+			"description": "соус сливочный, пармезан, сыр моцарелла, ветчина, баклажаны.",
+			"price":  134.99,
+			"weight": 410,
+			"size": 30,
+			"img-url": "./img/pizza/melanzana.jpg"
+		},
+		{
+			"id": 13,
+			"title": "Аль сальмоне",
+			"description": "соус сливочный, сыр моцарелла, кунжут, филе лосося.",
+			"price":  174.99,
+			"weight": 380,
+			"size": 30,
+			"img-url": "./img/pizza/alsalmone.jpg"
+		},
+		{
+			"id": 14,
+			"title": "Фламинго",
+			"description": "соус томатный, ветчина, баварские колбаски, сыр моцарелла, колбаса салями, прошутто.",
+			"price":  146.99,
+			"weight": 450,
+			"size": 30,
+			"img-url": "./img/pizza/flamingo.jpg"
+		}
+	]
+}
