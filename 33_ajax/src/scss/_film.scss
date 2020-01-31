@@ -1,0 +1,85 @@
+.film {
+	padding: 50px;
+	&__title {
+		text-align: center;
+	}
+	&__form {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		@media all and (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+	&__form-input {
+		flex-basis: 45%;
+	}
+	&__form-submit {
+		flex-basis: 25%;
+		background-color: $red;
+		text-transform: uppercase;
+		color: $white;
+		font-weight: bold;
+	}
+	&__form-select {
+		flex-basis: 25%;
+	}
+	&__form-input, &__form-submit, &__form-select {
+		border: 1px solid $red;
+		border-radius: 5px;
+		padding: 10px;
+
+	}
+	&__form-input::placeholder {
+		color: $black;
+	}
+	&__list-item-btn {
+		background-color: $red;
+		text-transform: uppercase;
+		color: $white;
+		font-weight: bold;
+		border-radius: 5px;
+		padding: 10px;
+		border: 1px solid $red;
+	}
+	&__list-item {
+		margin-bottom: 10px;
+	}
+	&__list-inner {
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid $red;
+	}
+	&__info {
+		border-radius: 5px;
+		border: 1px solid $red;
+		padding: 20px;
+	}
+	&__info-img-wrap, &__info-wrap {
+		text-align: center;
+	}
+	&__info-img-wrap {
+		margin-bottom: 20px;
+		border-radius: 10px;
+		@include padding-hack(800px);
+		@media all and (max-width: 767px) {
+			@include padding-hack(600px);
+		}
+		@media all and (max-width: 575px) {
+			@include padding-hack(444px);
+		}
+	}
+	&__info-rating {
+		margin-bottom: 0;
+	}
+	&__pagination-next, &__pagination-prev {
+		background-color: $red;
+		text-transform: uppercase;
+		color: $white;
+		font-weight: bold;
+		border-radius: 5px;
+		padding: 10px;
+		border: 1px solid $red;
+	}
+
+}
