@@ -1,3 +1,491 @@
+// document.querySelector('.i-1').addEventListener('keypress', (e) => {
+// 	console.log(e.code);
+// });
+document.querySelector('.i-1').addEventListener('keydown', (e) => {
+	console.log('keydown');
+	console.log(e.code);
+	return false;
+})
+//////////////////////////////////////
+// const one = document.getElementById('one');
+// one.addEventListener('click', () => {
+// 	console.log('click');
+// });
+// one.addEventListener('contextmenu', (e) => {
+// 	e.preventDefault();
+// 	console.log('doubleclick');
+// });
+// const two = document.getElementById('two');
+// two.addEventListener('mouseenter', () => {
+// 	two.style.backgroundColor = 'red';
+// });
+// two.addEventListener('mouseleave', () => {
+// 	two.style.backgroundColor = 'green';
+// });
+// two.addEventListener('mousedown', () => {
+// 	two.style.backgroundColor = 'orange';
+// });
+// two.addEventListener('mouseup', () => {
+// 	two.style.backgroundColor = 'blue';
+// });
+// let p = 10;
+// const prBtn = document.getElementById('prbtn');
+// prBtn.addEventListener('click', () => {
+// 	p++;
+// 	document.getElementById('progress').value = p;
+// });
+///////////////////////////////////
+// const myList = document.getElementById('myList');
+// const listBinding = new ListBinding(myList);
+// listBinding.update();
+// listBinding.add('fsdfds');
+// listBinding.add('fsdfds');
+// listBinding.add('fsdfds');
+// listBinding.remove(1);
+//////////////////////////
+// class Animal {
+// 	constructor (name) {
+// 		this.name = name;
+// 	}
+
+// 	makeSound () {
+// 		console.log('Generic Animal Sound!');
+// 	}
+// }
+
+// class Dog extends Animal {
+// 	constructor (name) {
+// 		super(name);
+// 	}
+
+// 	makeSound () {
+// 		super.makeSound();
+// 		console.log('Woof! Woof!');
+// 	}
+// }
+// const a1 = new Animal('Don');
+// const a2 = new Dog('Jeff');
+// a1.makeSound();
+// a2.makeSound();
+//////////////////////////////
+// class Person {
+// 	constructor(_name, _age) {
+// 		this.name = _name;
+// 		this.age = _age;
+// 	}
+// 	describe () {
+// 		console.log(`I am a ${this.name} and I am ${this.age} years old`);
+// 	}
+// }
+
+// class Programmer extends Person {
+// 	constructor (_name, _age, _yearsOfExperience) {
+// 		super (_name, _age);
+
+// 		this.yearsOfExperience = _yearsOfExperience;
+// 	}
+
+// 	code () {
+// 		console.log(`${this.name} is codding`);
+// 	}
+// }
+// const programmers = [
+// 	new Programmer('Dom', 56, 12),
+// 	new Programmer('Jeff', 24, 5),
+// 	new Programmer('Tiffany', 37, 12)
+// ];
+
+// function developSoftware (programmers) {
+// 	for (let programmer of programmers) {
+// 		programmer.code();
+// 	}
+// }
+// developSoftware(programmers);
+
+//////////////////////////////////
+// class Square {
+// 	constructor (_width) {
+// 		this.width = _width;
+// 		this.height = _width;
+// 	}
+
+// 	static equals (a, b) {
+// 		return a.width * a.height === b.width * b.height;
+// 	}
+
+// 	static isValidDimensions (width, height) {
+// 		return width === height;
+// 	}
+
+// }
+
+// let square1 = new Square(8);
+// let square2 = new Square(8);
+// console.log(Square.equals(square1, square2));
+// console.log(Square.isValidDimensions(6, 6));
+/////////////////////////////////
+// class Square {
+// 	constructor (_width) {
+// 		this.width = _width;
+// 		this.height = _width;
+// 		this.numOfRequestsForArea = 0;
+// 	}
+
+// 	get area () {
+// 		this.numOfRequestsForArea++;
+// 		return this.width * this.height;
+// 	}
+
+// 	set area (area) {
+// 		this.width = Math.sqrt(area);
+// 		this.height = this.width;
+// 	}
+// }
+
+// let square1 = new Square(4);
+// square1.area = 25;
+// console.log(square1.area);
+// console.log(square1.area);
+// console.log(square1.area);
+// console.log(square1.area);
+// console.log(square1.numOfRequestsForArea);
+/////////////////////////////
+// class Rectangle {
+// 	constructor (_width, _height, _color) {
+// 		console.log('sfdsd');
+
+// 		this.width = _width;
+// 		this.height = _height;
+// 		this.color = _color;
+// 	}
+
+// 	getArea () {
+// 		return  this.width  * this.height;
+// 	}
+
+// 	printDescription () {
+// 		console.log(`I am a rectangle of ${this.width} width and ${this.height} height!!!`);
+// 	}
+// }
+
+// const myRectangle1 = new Rectangle(18, 5, 'blue');
+// const myRectangle2 = new Rectangle(22, 14, 'blue');
+// console.log(myRectangle1);
+// console.log(myRectangle2);
+// console.log(myRectangle1.getArea());
+// console.log(myRectangle2.getArea());
+// console.log(myRectangle1.printDescription());
+// console.log(myRectangle2.printDescription());
+/////////////////////////////////
+// class Component {
+// 	constructor(selector) {
+// 		this.$el = document.querySelector(selector);
+// 	}
+
+// 	hide() {
+// 		this.$el.style.display = 'none';
+// 	}
+
+// 	show() {
+// 		this.$el.style.display = 'block';
+// 	}
+// }
+// class Box extends Component {
+// 	constructor(options) {
+// 		super(options.selector)
+
+// 		this.$el.style.width = this.$el.style.height = options.size + 'px';
+// 		this.$el.style.backgroundColor = options.color;
+// 	}
+// }
+
+// const box1 = new Box({
+// 	selector: '#box1',
+// 	size: 100,
+// 	color: 'red'
+// })
+// const box2 = new Box({
+// 	selector: '#box2',
+// 	size: 120,
+// 	color: 'blue'
+// })
+// box1.hide();
+// box1.show();
+// box2.hide();
+// box2.show();
+// class Circle extends Box {
+// 	constructor(options) {
+// 		super(options)
+
+// 		this.$el.style.borderRadius = '50%';
+// 	}
+// }
+
+// const c = new Circle({
+// 	selector: '#circle',
+// 	size: 150,
+// 	color: 'green'
+// })
+
+// class Animal {
+// 	constructor(options) {
+// 		this.name = options.name;
+// 		this.age = options.age;
+// 		this.hasTail = options.hasTail;
+// 	}
+
+// 	voice() {
+// 		console.log('I am animal');
+// 	}
+// }
+// class Cat extends Animal {
+// 	constructor(options) {
+// 		super(options)
+// 		this.color = options.color
+// 	}
+// 	voice() {
+// 		super.voice()
+// 		console.log('I am cat');
+// 	}
+// 	get ageInfo() {
+// 		return this.age * 3;
+// 	}
+// 	set ageInfo(newAge) {
+// 		this.age = newAge;
+// 	}
+// }
+// const cat = new Cat({
+// 	name: 'Cat',
+// 	age: 7,
+// 	hasTail: true
+// });
+// console.log(cat.age);
+// cat.ageInfo = 14;
+// console.log(cat.age);
+// console.log(cat.ageInfo);
+
+// const animal = new Animal({name: 'animal', age: 5, hasTail: true});
+// console.log(animal);
+// class Header {
+// 	constructor (img, h1, h2) {
+// 		this.src = img;
+// 		this.h1 = h1;
+// 		this.h2 = h2;
+// 	}
+// 	render(x) {
+// 		// x - куда отисовывать
+// 		console.log(this.h1);
+// 		let out = '';
+// 		out += `<img src="${this.src}" alt="" class="logo">`;
+// 		out += `<h1>${this.h1}</h1>`;
+// 		out += `<h2>${this.h2}</h2>`;
+// 		document.getElementById(x).innerHTML = out;
+// 	}
+// 	static hello() {
+// 		console.log('work static' + a);
+// 	}
+// }
+// const img = `https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png`;
+// let header = new Header(img, 'Hello', 'world');
+// header.render('header');
+// console.log(header);
+// class Header2 extends Header {
+// 	constructor(img, h1, h2, hero) {
+// 		super(img, h1, h2);
+// 		this._hero = hero;
+// 	}
+// 	get hero() {
+// 		return this._hero;
+// 	}
+// 	set hero(c) {
+// 		this._hero = c;
+// 	}
+// }
+// const header2 = new Header2(img ,'new hello', 'new site', 'ggogogogogogo');
+// header2.hero = 'Google';
+// console.log(header2.hero);
+// // header2.render('header');
+// console.log(header2);
+// class > object
+//method > 
+// class Alert {
+// 	constructor (a, c, d) {
+// 		this.message = a;
+// 		this.cssClass = c;
+// 		this.out = d;
+// 	}
+// 	showAlert() {
+// 		document.querySelector(this.out).innerHTML = `<p class="${this.cssClass}">${this.message}</p>`;
+// 	}
+// 	myAlert() {
+// 		alert(this.message);
+// 	}
+// }
+// class Alert2 extends Alert {
+// 	constructor(a, c, d, icon) {
+// 		super (a, c, d);
+// 		this.icon = icon;
+// 	}
+// 	showIconAlert() {
+// 		document.querySelector(this.out).innerHTML = `<p class="${this.cssClass}"><i class="material-icons">${this.icon}
+// 	</i>${this.message}</p>`;
+// 	}
+// 	myAlert() {
+// 		alert('hi' + this.message);
+// 	}
+// }
+// let m = new Alert('My messsage', 'red', '.test');
+// console.log(m);
+// m.showAlert();
+// let m2 = new Alert2('My messsage', 'red', '.test', 'account_balance');
+// // m2.showAlert();
+// m2.showIconAlert();
+// m2.myAlert();
+/////////////////////////////////////////
+
+// let shoppingList = [];
+// if (localStorage.getItem('list') != undefined) {
+// 	shoppingList = JSON.parse(localStorage.getItem('list'));
+// 	out();
+// }
+// document.getElementById('sl-add').addEventListener('click', () => {
+// 	let slName = document.getElementById('sl-name').value;
+// 	let slQty = document.getElementById('sl-qty').value;
+// 	let temp = {};
+// 	temp.name = slName;
+// 	temp.quantity = slQty;
+// 	temp.check = false;
+// 	let i = shoppingList.length;
+// 	shoppingList[i] = temp;
+// 	console.log(shoppingList.find(item => item.name === temp.name))
+// 	// shoppingList.forEach(function(item) {
+// 	// 	if (temp.name === item.name ){
+// 	// 		console.log(item.name);
+// 	// 	} else {
+// 	// 		
+// 	// 	}
+// 	// });
+// 	out();
+// 	localStorage.setItem('list', JSON.stringify(shoppingList));
+// });
+// function out() {
+// 	let out = '';
+// 	for (let key in shoppingList) {
+// 		if (shoppingList[key].check === true) {
+// 			out += `<input id="${shoppingList[key].name}" type="checkbox" checked>`;
+// 		} else {
+// 			out += `<input id="${shoppingList[key].name}" type="checkbox">`;
+// 		}
+// 		out += `${shoppingList[key].name} ${shoppingList[key].quantity} <br>`;
+// 	}
+// 	document.getElementById('sl-out').innerHTML = out;
+
+// }
+
+////////////////////////////////////////////////////
+// let a ='hello,hi,goodday';
+// console.log(a.split(','));
+// let b = [8, 9, 7];
+// b.forEach(function(elem, index) {
+// 	console.log(index);
+// 	console.log(elem * 2);
+// 	console.log('----');
+// });
+// let a = [4, 5, 12, 200, 1, 0, -2];
+// let b = a.map((item, index) => {
+// 	console.log(index);
+// 	return item * 5;
+// });
+// let c = a.filter(function(item, index) {
+// 	if (item > 0) {
+// 		return true;
+// 	}
+// })
+// console.log(c);
+// let arr = [4, 7, 9];
+// let divS = document.getElementsByTagName('p');
+// let qS = document.querySelectorAll('p');
+// console.log(divS);
+// console.log(qS);
+// console.log(arr);
+// for (let prop of qS) {
+// 	console.log(prop);
+// }
+// for (let key in qS) {
+// 	console.log(qS[key]);
+// }
+// for (let i = 0; i < qS.length; i++) {
+// 	console.log(qS[i]);
+// }
+// let a = [4, 5, 6];
+// let b = [
+// [1, 2, 3],
+// [4, 5, 6],
+// [7, 8, 9],
+// ];
+// let d = [1, 0, 0, 0, 0];
+// let k = 0;
+// document.querySelector('button').onclick = () => {
+// 	if (k+1 < 5) {
+// 		d[k] = 0;
+// 		d[k+1] = 1;
+// 		k++;
+// 		document.querySelector('.out-2').innerHTML = d;
+// 	}
+// }
+// console.log(b);
+
+// for (let i = 0; i < b.length; i++) {
+// 	// console.log(b[i]);
+// 	let c = b[i];
+// 	for (let j = c.length - 1; j >= 0; j--) {
+// 		console.log(c[j]);
+// 	}
+// }
+// let out = '';
+// for (let i = 0; i < b.length; i++) {
+// 	for (let j = 0; j < b[i].length; j++) {
+// 		out += b[i][j];
+// 	}
+// 	out += '<br>'
+// }
+// document.querySelector('.out').innerHTML = out;
+
+// let out = '';
+// for (let i = 0; i < b.length; i++) {
+// 	for (let j = 0; j < b[i].length; j++) {
+// 		if (b[i][j] > 4) {
+// 			out += b[i][j] + ' ';
+// 		}
+// 	}
+// 	out += '<br>';
+// }
+// console.log(out);
+
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const b = ['a', 'b', 'c', 'd', 'e', 'f'];
+// console.log(a.length);
+// console.log(a.push(10, 11, 15, 44));
+// console.log(a);
+// b.push('j', 'h');
+// console.log(b);
+// console.log(b.pop());
+// console.log(b.pop());
+// console.log(b);
+
+// // удалить элемент внутри массива
+// delete a[3];
+// console.log(a);
+// a.splice(3, 4, 'hi');
+// console.log(a);
+// let a = document.createElement('div');
+// a.innerHTML = 'Hello!';
+// a.classList.add('one');
+// a.onclick = function () {
+// 	alert('Hello');
+// }
+// document.querySelector('.test').appendChild(a);
+// console.log(a);
 // let name = prompt('Как вас зовут?', '');
 // alert(`Привет, ${name}!`);
 

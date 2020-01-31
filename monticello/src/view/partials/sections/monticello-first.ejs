@@ -1,0 +1,35 @@
+<% const carousel1 = [{title: "Simple & modern", subtitle: "We make the world's beautiful every day", class: "blue"}, {title: "Lorem ipsum.", subtitle: "We make the world's beautiful every day", class: "red"},  {title: "Lorem ipsum.", subtitle: "We make the world's beautiful every day", class: "green"},  {title: "Lorem ipsum.", subtitle: "We make the world's beautiful every day", class: "grey"},  {title: "Lorem ipsum.", subtitle: "We make the world's beautiful every day", class: "yellow"}] %>
+<% const navItems = [{name:'about us', link: '#'},{name: 'projects', link: '#projects'}, {name: 'news', link: '#news'},{name: 'contact', link: '#contact'}] %>
+<div class="monticello__first">
+	<header class="monticello__first-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-3">
+					<a href="#" class="monticello__first-logo">
+						<img src="../../../img/Logo.png" alt="logo" class="monticello__first-logo-img">
+					</a>
+				</div>
+				<div class="col-7 d-flex align-items-center">
+					<ul class="monticello__first-nav">
+						<% navItems.forEach(navItem => { %>
+							<li class="monticello__first-nav-item">
+								<a href="<%= navItem.link %>" class="monticello__first-nav-link"><%= navItem.name %></a>
+							</li>
+						<% }) %>
+					</ul>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</header>
+	<div class="monticello__carousel owl-carousel owl-theme" id="first-carousel">
+
+			<% carousel1.forEach(item => { %>
+			<div class="monticello__first-item <%= item.class %>">
+				<h1 class="monticello__first-item-title"><%= item.title %></h1>
+				<p class="monticello__first-item-subtitle"><%= item.subtitle %>
+				</p>
+			</div> 
+			<% }) %>
+	</div>
+</div>

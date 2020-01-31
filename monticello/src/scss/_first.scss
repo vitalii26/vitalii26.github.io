@@ -1,0 +1,118 @@
+.monticello__first {
+	min-height: 100vh;
+	&-header {
+		position: absolute;
+		color: $white;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: 60px;
+	}
+	&-item {
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		color: $white;
+		&.blue {
+			background: url('../img/first-mask.png') no-repeat, linear-gradient(90deg, $bg-blue, $bg-violet) no-repeat;
+		}
+		&.red {
+			background: url('../img/first-mask.png') no-repeat, linear-gradient(90deg, $bg-rose, $bg-red) no-repeat;
+		}
+		&.grey {
+			background: url('../img/first-mask.png') no-repeat, linear-gradient(90deg, $bg-grey, $bg-darkgrey) no-repeat;
+		}
+		&.green {
+			background: url('../img/first-mask.png') no-repeat, linear-gradient(90deg, $bg-green, $bg-darkgreen) no-repeat;
+		}
+		&.yellow {
+			background: url('../img/first-mask.png') no-repeat, linear-gradient(90deg, $bg-yellow, $bg-orange) no-repeat;
+		}
+	}
+	&-item-title {
+		text-transform: uppercase;
+		font-size: 8rem;
+		font-family: $title-font;
+	}
+	&-item-subtitle {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: $subtitle-font;
+		letter-spacing: .4rem;
+	}
+	&-logo {
+		display: flex;
+		@include padding-hack(60px);
+	}
+	&-nav {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	&-nav-link {
+		display: flex;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		font-family: $subtitle-font;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 9px;
+			height: 9px;
+			border: 1px solid $white;
+			border-radius: 50%;
+			top: 50%;
+			left: -14px;
+			transform: translate(-50%, -50%);
+			transition: $transition;
+
+		}
+		&:hover::before {
+			background-color: $white;
+		}
+		&:hover {
+			color: white;
+			font-weight: bold;
+		}
+		&.active::before {
+			background-color: $white;
+		}
+
+	}
+	.owl {
+		&-dots {
+			position: absolute;
+			top: 50%;
+			right: 40px;
+			display: flex;
+			flex-direction: column;
+			height: 30vh;
+			justify-content: space-between;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.owl-carousel button.owl-dot {
+		display: flex;
+		width: 9px;
+		height: 9px;
+		border: 1px solid $white;
+		border-radius: 50%;
+		background-color: transparent;
+		transition: $transition;
+		&:hover {
+			background-color: $white;
+		}
+		&.active {
+			background-color: $white;
+		}
+	}
+
+
+}

@@ -1,0 +1,36 @@
+@font-face {
+ font-family: "Gotham Medium";
+ src: url("../assets/fonts/Gotham Medium Regular/gotham-medium-webfont.woff2") format("woff2");
+}
+@font-face {
+ font-family: "Gotham Book";
+ src: url("../assets/fonts/GothamBook/GothamBook.woff") format("woff");
+}
+@font-face {
+ font-family: "Gotham Bold";
+ src: url("../assets/fonts/gothambold/gothambold1.woff") format("woff");
+}
+@font-face {
+ font-family: "Open Sans", sans-serif;
+ src: url("../assets/fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+// Colors:
+$medium-font: "Gotham Medium";
+$subtitle-font: "Gotham Book";
+$description-font: "Open Sans";
+$title-font: "Gotham Bold";
+$white: #fff;
+$font-blue: #2c4058;
+$bg-blue: #55b7ff;
+$bg-violet: #7e5aff;
+$bg-red: #946253;
+$bg-rose: #e08484;
+$bg-grey: #b0a2a2;
+$bg-darkgrey: #666666;
+$bg-green: #ace8b0;
+$bg-darkgreen: #4c8759;
+$bg-yellow: #e3c58d;
+$bg-orange: #a17b33;
+
+$transition: all .3s ease;

@@ -1,1 +1,105 @@
-<h1>Lesson 24. Cycles JS</h1>
+<div class="first">
+	<div class="container">
+		<form action="" class="form">
+			<h2 class="title">Задача 1. Сумма всех чисел в заданном пользователем диапазоне</h2>
+			<label for="sumNum1" class="form__label">Задайте начальное число диапазона:</label>
+			<input type="text" id="sumNum1" class="form__input" required>
+			<label for="sumNum2" class="form__label">Задайте конечное число диапазона:</label>
+			<input type="text" id="sumNum2" class="form__input" required>
+			<input type="button" value="Вычислить сумму" class="form__button" id="sum__button">
+			<p class="form__out" id="sum__out">Результат</p>
+			<!-- ====2===== -->
+			<h2 class="title">Задача 2. Наибольший общий делитель</h2>
+			<label for="divisorNum1" class="form__label">Задайте первое число:</label>
+			<input type="text" id="divisorNum1" class="form__input" required>
+			<label for="divisorNum2" class="form__label">Задайте второе число:</label>
+			<input type="text" id="divisorNum2" class="form__input" required>
+			<input type="button" value="Узнать делитель" class="form__button" id="divisor__button">
+			<p class="form__out" id="divisor__out">Результат</p>
+			<!-- ====3===== -->
+			<h2 class="title">Задача 3. Вывести все делители числа</h2>
+			<label for="number1" class="form__label">Введите число:</label>
+			<input type="number" id="number1" class="form__input" required>
+			<input type="button" value="Вывести" class="form__button" id="result__button">
+			<p class="form__out" id="result__out">Результат</p>
+			<!-- ====4===== -->
+			<h2 class="title">Задача 4. Определить количество цифр в введенном числе</h2>
+			<label for="checkNumber" class="form__label">Введите число:</label>
+			<input type="number" id="checkNumber" class="form__input" required>
+			<input type="button" value="Определить" class="form__button" id="amount__button">
+			<p class="form__out" id="amount__out">Результат</p>
+			<!-- ====5===== -->
+			<h2 class="title">Задача 5. Подсчет чисел</h2>
+			<label for="numbers" class="form__label">Введите числа через запятую:</label>
+			<input type="text" id="numbers" class="form__input" required>
+			<input type="button" value="Посчитать" class="form__button" id="count__button">
+			<p class="form__out" id="count__out">Результат</p>
+			<!-- ====6===== -->
+			<h2 class="title">Задача 6. Зациклить калькулятор</h2>
+			<label for="calcNum1" class="form__label">Задайте первое число:</label>
+			<input type="text" id="calcNum1" class="form__input" required>
+			<select name="operator" id="operator">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<label for="calcNum2" class="form__label">Задайте второе число:</label>
+			<input type="text" id="calcNum2" class="form__input" required>
+			<input type="button" value="Конвертировать" class="form__button" id="calc__button">
+			<select name="calcquestion" id="calcquestion">
+				<option disabled>Хотите ли вы решить ещё один пример?</option>
+				<option value="yes">Да</option>
+				<option value="no">Нет</option>
+			</select>
+			<p class="form__out" id="calc__out">Результат</p>
+			<!-- ====7===== -->
+			<h2 class="title">Задача 7. Сумма к оплате</h2>
+			<label for="sum" class="form__label">Введите сумму покупки:</label>
+			<input type="number" id="sum" class="form__input" required>
+			<input type="button" value="Вывести сумму" class="form__button" id="sum__button">
+			<p class="form__out" id="discount__out">Результат</p>
+			<p class="form__out" id="sum__out">Результат</p>
+			<!-- ====8===== -->
+			<h2 class="title">Задача 8. Окружность в квадрате</h2>
+			<label for="circleLength" class="form__label">Введите длинну окружности:</label>
+			<input type="number" id="circleLength" class="form__input" required>
+			<label for="squarePer" class="form__label">Введите периметр квадрата:</label>
+			<input type="number" id="squarePer" class="form__input" required>
+			<input type="button" value="Вывести сумму" class="form__button" id="figure__button">
+			<p class="form__out" id="figure__out">Результат</p>
+			<!-- ====9===== -->
+			<h2 class="title">Задача 9. Вопросы</h2>
+			<h3>Сколько будет 2 + 2?</h3>
+			<input class="form__radio" type="radio" name="question1" value="4" id="four">
+			<label for="four" class="form__label">4</label>
+			<input class="form__radio" type="radio" name="question1" value="3" id="three">
+			<label for="three" class="form__label">3</label>
+			<input class="form__radio" type="radio" name="question1" value="5" id="five">
+			<label for="five" class="form__label">5</label>
+			<h3>Столица США?</h3>
+			<input class="form__radio" type="radio" name="question2" value="Washington" id="WA">
+			<label for="WA" class="form__label">Washington</label>
+			<input class="form__radio" type="radio" name="question2" value="New York" id="NY">
+			<label for="NY" class="form__label">New York</label>
+			<input class="form__radio" type="radio" name="question2" value="Chicago" id="CH">
+			<label for="CH" class="form__label">Chicago</label>
+			<h3>Денежная единица Польши?</h3>
+			<input class="form__radio" type="radio" name="question3" value="dollar" id="dollar">
+			<label for="dollar" class="form__label">Доллар</label>
+			<input class="form__radio" type="radio" name="question3" value="euro" id="euro">
+			<label for="euro" class="form__label">Евро</label>
+			<input class="form__radio" type="radio" name="question3" value="zloty" id="zloty">
+			<label for="zloty" class="form__label">Злотый</label>
+			<input type="button" value="Узнать результат" class="form__button" id="question__button">
+			<p class="form__out" id="question__out">Результат</p>
+			<!-- ====10===== -->
+			<h2 class="title">Задача 10. Дата</h2>
+			<label for="date1" class="form__label">Введите дату:</label>
+			<input type="date" id="date1" class="form__input" required>
+			<input type="button" value="Вывести следующую дату" class="form__button" id="date__button">
+			<p class="form__out" id="date__out">Результат</p>
+		</form>
+	</div>
+</div>
+
