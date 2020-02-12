@@ -1,0 +1,109 @@
+@import '../../../styles/styles.scss';
+
+.p__menu-right {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 120px);
+    right: 0;
+    right: -105%;
+    top: 120px;
+    background-color: $white;
+    box-shadow: 0px 0px 20px $black;
+    z-index: 5;
+    font-size: 1rem;
+    transition: all 1s ease, padding .3s ease;
+    padding: 30px 20px 20px;
+    overflow: hidden;
+    @include md-screen {
+        max-width: 35%;
+        right: -40%;
+    }
+    @include lg-screen {
+        max-width: 30%;
+        right: -35%;
+    }
+    @include xl-screen {
+        max-width: 25%;
+        right: -30%;
+    }
+    &-logo {
+        width: 30px;
+        height: 30px;
+        fill: $black;
+    }
+    &.open {
+        right: 0;
+    }
+    &-link-text {
+        color: $black;
+        font-weight: bold;
+    }
+    &-list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border-bottom: 2px solid $red;
+        padding: 5px;
+        @include md-screen {
+            padding: 8px;
+        }
+    }
+    &-link {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+
+       
+        &:hover .p__menu-right-logo,
+        &.active .p__menu-right-logo {
+            fill: $red;
+        }
+        &:hover .p__menu-right-link-text,
+        &.active .p__menu-right-link-text {
+            color: $red;
+        }
+        @include md-screen {
+            padding: 10px;
+            justify-content: flex-start;
+        }
+
+    }
+    &-link-text {
+        transition: $transition;
+    }
+    &-logo {
+        margin-right: 10px;
+        transition: $transition;
+    }
+    &-addlist {
+        padding: 10px;
+        @include md-screen {
+            padding: 20px;
+        }
+    }
+    &-reservation {
+        display: inline-flex;
+        background-color: $red;
+        color: $white;
+        padding: 10px;
+        border: 2px solid $white;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: $transition;
+        justify-content: center;
+        &:hover {
+            color: $red;
+            background-color: $white;
+            box-shadow: 0 0  5px 5px $red;
+        }
+    }
+    }
+    .p__menu-right-reservation{
+        &.active {
+            background-color:#000;
+        }
+        
+    }

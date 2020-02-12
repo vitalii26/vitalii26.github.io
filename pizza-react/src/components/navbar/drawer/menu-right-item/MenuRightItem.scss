@@ -1,0 +1,18 @@
+@import '../../../../styles/styles.scss';
+
+.p__menu-right-addlink {
+    display: flex;
+    color: $black;
+    font-weight: bold;
+    padding: 5px;
+    transition: $transition;
+    justify-content: center;
+    &:hover,
+    &.active {
+        color: $red;
+    }
+    @include md-screen {
+        padding: 10px;
+        justify-content: flex-start;
+    }
+}

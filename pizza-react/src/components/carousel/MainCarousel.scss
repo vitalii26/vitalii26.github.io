@@ -1,0 +1,20 @@
+@import '../../styles/styles.scss';
+.p__main {
+    &-carousel {
+        width: 100%;
+        padding: 130px 10px 10px 10px;
+        background-color: $white;
+        @include md-screen {
+            padding-top: 145px;
+        }
+    }
+
+&-carousel-item {
+    @include padding-hack(calc(100vh - 155px)) {
+        display: flex;
+        & > img {
+             border-radius: 20px;
+        }
+    }
+}
+}

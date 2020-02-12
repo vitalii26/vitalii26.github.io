@@ -1,0 +1,14 @@
+@import '../../styles/styles.scss';
+.p__deserts {
+    display: flex;
+    padding-top: 160px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    &.home {
+        padding-top: 15px;
+        min-height: 100%;
+    }
+}

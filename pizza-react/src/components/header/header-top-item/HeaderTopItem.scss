@@ -1,0 +1,29 @@
+@import '../../../styles/styles.scss';
+.p__header {
+    &-contact-link {
+        color: rgba($white, .8);
+        transition: $transition;
+        font-weight: bold;
+        &:hover {
+            color: $red;
+            text-decoration: none;
+        }
+        &:hover .p__header-nav-top-logo {
+            fill: $red;
+        }
+    }
+    &-contact-text {
+        display: none;
+        @include md-screen {
+            display: inline-flex;
+        }
+        
+    }
+    &-nav-top-logo {
+        fill: rgba($white, .8);
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+        transition: $transition;
+    }
+}

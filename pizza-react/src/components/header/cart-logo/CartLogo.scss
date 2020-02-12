@@ -1,0 +1,60 @@
+@import '../../../styles/styles.scss';
+.p__header {
+    &-cart-logo {
+		fill: $white;
+		width: 45px;
+		height: 45px;
+		transition: $transition;
+	}
+	&-cart {
+		background-color: $red;
+		border: 2px solid $white;
+		border-radius: 30px;
+		padding: 10px 10px 10px 10px;
+		width: 100%;
+		max-width: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		position: relative;
+		transition: $transition;
+		&:hover {
+			background-color: $white;
+			color: $red;
+			border-color: red;
+			box-shadow: 0 0  5px 5px $red;
+		}
+		&:hover .p__header-cart-logo {
+			fill: $red;
+		}
+		&:hover .p__header-cart-price {
+			color: $red;
+		}
+	}
+	&-cart-price {
+		font-size: 1rem;
+		position: relative;
+		color: $white;
+		font-weight: bold;
+		transition: $transition;
+	}
+	&-cart-currency {
+		font-size: 1.2rem;
+		margin-right: 5px;
+	}
+	&-cart-amount {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		background-color: $yellow;
+		color: $black;
+		font-weight: bold;
+		border-radius: 50%;
+		font-size: .8rem;
+		position: absolute;
+		right: 5px;
+	}
+}

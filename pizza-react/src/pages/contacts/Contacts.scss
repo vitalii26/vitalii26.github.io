@@ -1,0 +1,91 @@
+@import '../../styles/styles.scss';
+.p__contacts {
+    display: flex;
+    width: 100%;
+    background: url('../../images/contacts-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0 50px;
+    min-height: 100vh;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba($grey, .3);
+        z-index: 2;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+    
+
+    &.home {
+        padding: 50px 0;
+        min-height: initial;
+
+    }
+
+    &-inner {
+        padding: 30px;
+        background-color: $white;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &-logo {
+        fill: $red;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    &-item-inner {
+        text-align: center;
+    }
+
+    &-address {
+        font-style: italic;
+    }
+
+    &-tel {
+        color: $black;
+        font-weight: bold;
+        transition: $transition;
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &-mail {
+        position: relative;
+        z-index: 2;
+    }
+
+    &-mail-title {
+        color: $white;
+        text-shadow: 0 10px 10px $black;
+        font-family: $title-font;
+        font-size: 2rem;
+    }
+    &-input {
+        width: 60%;
+        background-color: rgba($white, .8);
+        border: none;
+        padding: 10px;
+        color: $red;
+        &::placeholder {
+            color: $red; 
+        }
+    }
+
+    &-button {
+        padding: 10px 20px;
+        background-color: $red;
+        border: none;
+        color: $white;
+        text-transform: uppercase;
+
+    }
+}

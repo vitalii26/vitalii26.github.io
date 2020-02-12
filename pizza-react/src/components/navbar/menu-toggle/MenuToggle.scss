@@ -1,0 +1,28 @@
+@import '../../../styles/styles.scss';
+
+.p__menu-icon__burger {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &.toggle .line1 {
+        transform: rotate(45deg) translate(8px, 10px);
+    }
+    &.toggle .line2 {
+        opacity: 0;
+    }
+    &.toggle .line3 {
+        transform: rotate(135deg) translate(-5px, 7px) ;
+    }
+    &:hover .p__menu-icon__line {
+        border-color: $red;
+    }
+
+}
+.p__menu-icon__line {
+    border: 2px solid $white;
+    transition: $transition;
+}

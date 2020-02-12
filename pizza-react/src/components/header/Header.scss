@@ -1,0 +1,55 @@
+@import '../../styles/styles.scss';
+
+.p__header {
+    background-color: #000;
+    padding: 10px 0 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-bottom-left {
+        display: flex;
+    }
+    &-bottom-right {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        justify-content: space-between;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        @include md-screen {
+            justify-content: space-between;
+        }
+    }
+    &-nav-list {
+        display: flex;
+    }
+    &-logo {
+		display: flex;
+		padding: 5px;
+		align-items: center;
+		font-family: Athena;
+		font-size: 4rem;
+		line-height: 4rem;
+		color: $red;
+		transition: $transition;
+		&:hover {
+			color: $white;
+		}
+	}
+	&-nav-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}

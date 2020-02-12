@@ -1,0 +1,8 @@
+.pizza {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+}

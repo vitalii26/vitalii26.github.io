@@ -1,0 +1,12 @@
+@import  '../../../styles/styles.scss';
+.p__pizza-detail {
+    padding-top: 180px;
+    color: $black;
+    &-photo {
+        @include padding-hack(500px);
+
+    }
+    &-img {
+        border-radius: 20px;
+    }
+}

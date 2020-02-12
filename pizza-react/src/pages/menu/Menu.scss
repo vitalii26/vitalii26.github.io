@@ -1,0 +1,92 @@
+@import '../../styles/styles.scss';
+.p__news {
+    display: flex;
+    padding: 150px 0 100px;
+    width: 100%;
+    background: $white url('../../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    &.home {
+        padding: 50px 0 50px;
+    }
+
+    &-title {
+        color: $black;
+        font-size: 3rem;
+        font-family: $title-font;
+        margin-bottom: 40px;
+        text-shadow: 5px 5px $white;
+    }
+
+    &-inner {
+        @include lg-screen {
+            box-shadow: 0 0 40px 10px rgba($brown, .8);
+        }
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 20px 10px rgba($brown, .8);
+        transition: $transition;
+        @include lg-screen {
+            box-shadow: none;
+            
+        }
+        &.reverse {
+            display: flex;
+            flex-direction: column;
+            @include lg-screen {
+                flex-direction: column-reverse;
+            }
+            
+        }
+
+        &:hover {
+            transform: translateY(-15px);
+        }
+        
+    }
+
+    &-img-wrap {
+        
+        @include padding-hack(300px);
+        display: flex;
+        order: -1;
+        box-shadow: 0 0 20px rgba($brown, .8);
+        @include lg-screen {
+            box-shadow: none;
+            @include padding-hack(250px);
+        }
+    }
+
+    &-content {
+        display: flex;
+        min-height: 250px;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white;
+        order: 2;
+    }
+    
+    &-card-title {
+        font-family: $title-font;
+        color: $red;
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    &-text {
+        color: $black;
+        font-style: italic;
+        text-align: center;
+    }
+    &-price {
+        color: $black;
+        font-family: $title-font;
+        font-size: 1.5rem;
+    }
+}

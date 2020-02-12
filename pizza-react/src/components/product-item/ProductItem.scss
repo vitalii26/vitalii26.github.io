@@ -1,0 +1,109 @@
+@import '../../styles/styles.scss';
+.p {
+	&__item-photo-wrap {
+		@include padding-hack(350px);
+		& > img {
+			border-radius: 15px 15px 0 0;
+		}
+	}
+	&__item-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0  10px rgba($black, .7);
+        transition: $transition;
+		&:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0  20px rgba($black, .7);
+		}
+	}
+	&__item-photo-wrap {
+		margin-bottom: 10px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		&:hover .p__item-description__wrapper {
+			transform: translateY(-300px);
+			width: 100%;
+			border-radius: 20px 20px 0 0;
+		}
+		&.open {
+			cursor: pointer;
+		}
+	}
+	&__item-title {
+		text-transform: capitalize;
+		color: $black;
+		font-weight: bold;
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+		font-family: $title-font;
+	}
+	&__item-price {
+		color: $red;
+		font-weight: bold;
+		font-size: 1.8rem;
+		margin-bottom: 15px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			display: flex;
+			height: 2px;
+			width: 35px;
+			background-color: rgba($black, 0.5);
+			top: 50%;
+			right: -5px;
+			transform: translate(100%, 50%);
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			display: flex;
+			height: 2px;
+			width: 35px;
+			background-color: rgba($black, 0.5);
+			top: 50%;
+			left: -5px;
+			transform: translate(-100%, 50%);
+		}
+	}
+	&__item-weight {
+		color: $red;
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+	&__item-btn {
+		background-color: $red;
+		color: $white;
+		padding: 10px;
+		border: 2px solid $white;
+		border-radius: 5px;
+		font-weight: bold;
+		transition: $transition;
+		justify-content: center;
+		width: 90%;
+		&:hover {
+			color: $red;
+			background-color: $white;
+			box-shadow: 0 0  5px 5px $red;
+		}
+	}
+	&__item-description__wrapper {
+		text-align: center;
+		padding: 10px 20px;
+		position: absolute;
+		width: 100%;
+		top: 295px;
+		transform: translateY(0);
+		background-color: rgba($white, .8);
+		min-height: 355px;
+		transition: all .4s ease;
+
+	}
+	&__item-size {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,121 @@
+@import '../../styles/styles.scss';
+.p__cart {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    background-color: $white;
+    padding-top: 150px;
+
+    &-item {
+        display: flex;
+        padding: 10px;
+    }
+    &-image-wrapper {
+        
+        width: 100%;
+        max-width: 20%;
+        @include padding-hack(150px);
+        margin-right: 20px;
+        @include sm-screen {
+            @include padding-hack(200px);
+            
+        }
+    }
+    &-image {
+        border-radius: 10px;
+    }
+    &-item-quantity-wrapper {
+        display: flex;
+        width: 100%;
+        max-width: 100px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        @include md-screen {
+            max-width: 120px;
+            margin-bottom: 0;
+        }
+    }
+    &-item-quantity-add,
+    &-item-quantity-sub {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: $white;
+        color: $red;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    &-descripton-wrapper {
+        width: 100%;
+        max-width: 300px;
+    }
+    &-item-quantity {
+        font-weight: bold;
+        line-height: 2.5;
+    }
+    &-item-title {
+        font-family: $title-font;
+    }
+    &-item-description {
+        font-size: .8rem;
+
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    &-item-price {
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    &-item-bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+        justify-content: space-between;
+        align-items: center;
+        @include sm-screen {
+            margin-right: 15px;
+        }
+        @include lg-screen {
+            flex-direction: row;
+            margin-right: 0;
+        }
+    }
+    &-item-delete {
+        width: 30px;
+        height: 30px;
+        fill: $red;
+    }
+    &-sum {
+        color: $red;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: $title-font;
+    }
+
+    &-btn {
+        color: $white;
+        background-color:$red;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: $transition;
+
+        &.success {
+            background-color: rgb(27, 167, 27);
+        }
+        &:hover {
+            color: $red;
+            background-color: $white;
+            box-shadow: 0 0 20px $red;
+            &.success {
+                color: rgb(27, 167, 27);
+                box-shadow: 0 0 20px rgb(27, 167, 27);
+            }
+        }
+    }
+}

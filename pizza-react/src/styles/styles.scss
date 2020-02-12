@@ -1,0 +1,33 @@
+@import './mixins.scss';
+@import './vars.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	color: $black;
+	font-size: 100%;
+	background-color: $white;
+	overflow-x: hidden;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
