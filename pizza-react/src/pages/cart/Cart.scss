@@ -104,9 +104,14 @@
         padding: 10px 20px;
         text-transform: uppercase;
         transition: $transition;
+        margin-bottom: .8rem;
+        @include sm-screen {
+            margin-bottom: 0;
+        }
 
         &.success {
             background-color: rgb(27, 167, 27);
+            border: none;
         }
         &:hover {
             color: $red;

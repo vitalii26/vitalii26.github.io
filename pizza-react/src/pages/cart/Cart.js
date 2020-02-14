@@ -63,16 +63,16 @@ const Cart = () => {
 
         ))}
           {items.length > 0 ? 
-          <div className="row d-flex justify-content-end mb-3">
+          <div className="row d-flex justify-content-center mb-3">
             <span className="p__cart-sum">{`Сумма покупки: ${totalPrice(items)} грн`}</span>
             </div> 
             : null}
           {items.length > 0 ?
-          <div className="row justify-content-end">
+          <div className="row justify-content-center mb-3">
             <Link className="p__cart-btn mr-2" to="/pizza/">Продолжить покупки</Link>
-            <Link className="p__cart-btn success">Сделать заказ</Link>
+            <button className="p__cart-btn success">Сделать заказ</button>
           </div> :
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mb-3">
             <Link className="p__cart-btn" to="/pizza/">Перейти к покупкам</Link>
           </div>
           }

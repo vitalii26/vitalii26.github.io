@@ -2,7 +2,7 @@
 "use strict";
 
 ///////////////1//////////////////
-var playList = [{
+let playList = [{
   author: 'LED ZEPPELIN',
   song: 'STAIRWAY TO HEAVEN'
 }, {
@@ -27,50 +27,50 @@ var playList = [{
   author: 'METALLICA',
   song: 'ENTER SANDMAN'
 }];
-var root = document.querySelector('#root');
-var dom = document.createElement('div');
+let root = document.querySelector('#root');
+let dom = document.createElement('div');
 dom.classList.add('dom');
 root.appendChild(dom);
-var container = document.createElement('div');
+let container = document.createElement('div');
 container.classList.add('container');
 dom.appendChild(container);
-var ol = document.createElement('ol');
+let ol = document.createElement('ol');
 ol.classList.add('dom__list');
 container.appendChild(ol);
 playList.forEach(function (element) {
-  var li = document.createElement('li');
+  let li = document.createElement('li');
   li.classList.add('dom__list-item');
   ol.appendChild(li);
-  var p = document.createElement('p');
+  let p = document.createElement('p');
   p.classList.add('dom__list-text');
   p.textContent = "".concat(element.author, " - ").concat(element.song);
   li.appendChild(p);
 }); ///////////////////2//////////////////////////////
 
-var dom1 = document.createElement('div');
+let dom1 = document.createElement('div');
 dom1.classList.add('dom');
 root.appendChild(dom1);
-var container1 = document.createElement('div');
+let container1 = document.createElement('div');
 container1.classList.add('container');
 dom1.appendChild(container1);
-var modalOpen = document.createElement('div');
+let modalOpen = document.createElement('div');
 modalOpen.classList.add('dom__modal-open');
 container1.appendChild(modalOpen);
-var openBtn = document.createElement('button');
+let openBtn = document.createElement('button');
 openBtn.innerHTML = 'Открыть модальное окно';
 openBtn.classList.add('dom__modal-open-btn');
 modalOpen.appendChild(openBtn);
-var modalInner = document.createElement('div');
+let modalInner = document.createElement('div');
 modalInner.classList.add('dom__modal');
 container1.appendChild(modalInner);
-var modalWindow = document.createElement('div');
+let modalWindow = document.createElement('div');
 modalWindow.classList.add('dom__modal-inner');
 modalInner.appendChild(modalWindow);
-var modalWindowTitle = document.createElement('h4');
+let modalWindowTitle = document.createElement('h4');
 modalWindowTitle.classList.add('dom__modal-title');
 modalWindowTitle.textContent = 'Модальное окно';
 modalWindow.appendChild(modalWindowTitle);
-var closeBtn = document.createElement('button');
+let closeBtn = document.createElement('button');
 closeBtn.innerHTML = 'Закрыть модальное окно';
 closeBtn.classList.add('dom__modal-close-btn');
 modalWindow.appendChild(closeBtn);
@@ -83,39 +83,39 @@ closeBtn.addEventListener('click', function () {
   modalWindow.classList.toggle('open');
 }); //////////////////////3///////////////////////
 
-var dom2 = document.createElement('div');
+let dom2 = document.createElement('div');
 dom2.classList.add('dom');
 root.appendChild(dom2);
-var container2 = document.createElement('div');
+let container2 = document.createElement('div');
 container2.classList.add('container');
 dom2.appendChild(container2);
-var lights = document.createElement('div');
+let lights = document.createElement('div');
 lights.classList.add('dom__lights');
 container2.appendChild(lights);
-var lightsInner = document.createElement('div');
+let lightsInner = document.createElement('div');
 lightsInner.classList.add('dom__lights-inner');
 lights.appendChild(lightsInner);
-var lightsInnerWrap = document.createElement('div');
+let lightsInnerWrap = document.createElement('div');
 lightsInnerWrap.classList.add('dom__lights-inner-wrap');
 lightsInner.appendChild(lightsInnerWrap);
-var lightsColorRed = document.createElement('div');
+let lightsColorRed = document.createElement('div');
 lightsColorRed.classList.add('dom__lights-color');
 lightsColorRed.classList.add('red');
 lightsInnerWrap.appendChild(lightsColorRed);
-var lightsColorYellow = document.createElement('div');
+let lightsColorYellow = document.createElement('div');
 lightsColorYellow.classList.add('dom__lights-color');
 lightsColorYellow.classList.add('yellow');
 lightsInnerWrap.appendChild(lightsColorYellow);
-var lightsColorGreen = document.createElement('div');
+let lightsColorGreen = document.createElement('div');
 lightsColorGreen.classList.add('dom__lights-color');
 lightsColorGreen.classList.add('green');
 lightsInnerWrap.appendChild(lightsColorGreen);
-var lightsBtn = document.createElement('button');
+let lightsBtn = document.createElement('button');
 lightsBtn.classList.add('dom__lights-btn');
 lightsBtn.textContent = 'Переключить на другой цвет';
 lightsInner.appendChild(lightsBtn);
-var domLights = document.querySelectorAll('.dom__lights-color');
-var i = domLights.length - 1;
+let domLights = document.querySelectorAll('.dom__lights-color');
+let i = domLights.length - 1;
 lightsBtn.addEventListener('click', function () {
   domLights[i].classList.remove("active");
 

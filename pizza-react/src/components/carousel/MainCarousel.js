@@ -2,8 +2,7 @@ import React from 'react';
 import './MainCarousel.scss';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import image1 from '../../images/pizza1.jpg';
-import image2 from '../../images/pizza2.jpg';
+
 
 const MainCarousel = () => {
     return (
@@ -14,37 +13,22 @@ const MainCarousel = () => {
         infiniteLoop
         className="p__main-carousel">
           <div className="p__main-carousel-item">
-            <img src={image1} alt="pizza1"/>
+            <img src="../images/pizza1.jpg" alt="pizza1"/>
+            <h1 className="p__main-carousel-title">Foodi</h1>
+            <p className="p__main-carousel-text">Лучшая пицца</p>
           </div>
           <div className="p__main-carousel-item">
-            <img src={image2} alt="pizza2"/>
+            <img src="../images/pizza2.jpg" alt="pizza2"/>
+            <h1 className="p__main-carousel-title">Foodi</h1>
+            <p className="p__main-carousel-text">Доставка 24/7</p>
           </div>
           <div className="p__main-carousel-item">
             <img src="../images/pizza3.jpg" alt="pizza3"/>
+            <h1 className="p__main-carousel-title">Foodi</h1>
+            <p className="p__main-carousel-text">Вкуснейшая пицца</p>
           </div>
           <div className="p__main-carousel-item">
             <img src="../images/pizza4.jpg" alt="pizza4"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza5.jpg" alt="pizza5"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza6.jpg" alt="pizza6"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza7.jpg" alt="pizza7"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza8.jpg" alt="pizza8"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza9.jpg" alt="pizza9"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="../images/pizza10.jpg" alt="pizza10"/>
-          </div>
-          <div className="p__main-carousel-item">
-            <img src="img/pizza11.png" alt="pizza11"/>
           </div>
         </Carousel>
     )

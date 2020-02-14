@@ -10,6 +10,7 @@
     }
 
 &-carousel-item {
+    position: relative;
     @include padding-hack(calc(100vh - 155px)) {
         display: flex;
         & > img {
@@ -17,4 +18,37 @@
         }
     }
 }
+&-carousel-text {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $yellow;
+    font-size: 2.2rem;
+    text-shadow: 0 0 20px $brown;
+    font-family: $title-font;
+    @include md-screen {
+        font-size: 3rem;
+    }
+    @include lg-screen {
+        font-size: 3.5rem;
+    }
+}
+
+&-carousel-title {
+    position: absolute;
+    color: $white;
+    text-shadow: 0 50px 50px $brown;
+    font-family: Athena;
+    font-size: 8rem;
+    top: 50%;
+    left: 50%;
+    line-height: 0;
+    transform: translate(-50%, -50%);
+    @include sm-screen {
+        font-size: 18rem;
+    }
+}
+
+
 }

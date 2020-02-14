@@ -1,4 +1,4 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){let c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);let a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
@@ -9,8 +9,8 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-var area = null;
-var view = document.getElementById('view');
+let area = null;
+let view = document.getElementById('view');
 document.addEventListener('keydown', function (event) {
   if (event.code == 'KeyE' && (event.ctrlKey || event.metaKey)) {
     editStart();
@@ -38,17 +38,17 @@ function editEnd() {
 } ////////////////2////////////////////
 
 
-var table = document.getElementById('table');
+let table = document.getElementById('table');
 table.addEventListener('click', function (event) {
   if (event.target.tagName != 'TH') return;
-  var th = event.target;
+  let th = event.target;
   sortGrid(th.cellIndex, th.dataset.type);
 });
 
 function sortGrid(colNum, type) {
-  var tbody = table.querySelector('tbody');
-  var rowsArray = Array.from(tbody.rows);
-  var compare;
+  let tbody = table.querySelector('tbody');
+  let rowsArray = Array.from(tbody.rows);
+  let compare;
 
   switch (type) {
     case 'number':
@@ -71,8 +71,8 @@ function sortGrid(colNum, type) {
 } ////////////////3////////////////////
 
 
-var element = document.querySelector('.event__element');
-var resizer = document.createElement('div');
+let element = document.querySelector('.event__element');
+let resizer = document.createElement('div');
 resizer.className = 'event__resizer';
 element.appendChild(resizer);
 resizer.addEventListener('mousedown', initResize);
